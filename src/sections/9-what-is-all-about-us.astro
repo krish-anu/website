@@ -5,20 +5,59 @@ import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
-<section id="about-us" class="pt-8">
-	<h2 class="text-4xl mt-0">{t("all_about_us_section_heading")}</h2>
-	<p class="text-xl">
-		{t("all_about_us_section_1")}
-	</p>
-	<p class="text-xl">
-		{t("all_about_us_section_2")}
-	</p>
-	<ul class="text-xl md:pl-28">
-		<li>{t("all_about_us_section_thamilaruvi")}</li>
-		<li>{t("all_about_us_section_sotkanai")}</li>
-		<li>{t("all_about_us_section_etc")}</li>
-	</ul>
-	<p class="text-xl">
-		{t("all_about_us_section_3")}
-	</p>
+<section id="about-us" class="body1 pt-8">
+	<div class="w-[50vw] card">
+		<h2 class="text-4xl mt-0">{t("all_about_us_section_heading")}</h2>
+		<p class="text-xl">
+			{t("all_about_us_section_1")}
+		</p>
+		<p class="text-xl">
+			{t("all_about_us_section_2")}
+		</p>
+		<ul class="text-xl md:pl-28">
+			<li>{t("all_about_us_section_thamilaruvi")}</li>
+			<li>{t("all_about_us_section_sotkanai")}</li>
+			<li>{t("all_about_us_section_etc")}</li>
+		</ul>
+		<p class="text-xl">
+			{t("all_about_us_section_3")}
+		</p>
+	</div>
 </section>
+<style>
+	.body1 {
+		font:
+			1em/1.618 Inter,
+			sans-serif;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		min-height: 100vh;
+
+		color: #224;
+		background: url("/bg4.jpg") center / cover no-repeat fixed;
+		color: black;
+		color: black;
+	}
+	.card {
+		max-width: 900px;
+		min-height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		max-width: 1000px;
+		height: auto;
+		padding: 30px;
+
+		border: 1px solid rgba(255, 255, 255, 0.25);
+		border-radius: 1rem;
+		background-color: rgba(255, 255, 255, 0.9);
+		box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+		backdrop-filter: blur(15px);
+		column-gap: 20px;
+	}
+</style>
