@@ -16,7 +16,9 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		>
 		<!-- Welcome To<br /><span class="inline-block w-max">Mora&nbsp;Exams</span> -->
 	</h1>
-	<button class="btn w-[140px] sm:w-[15vw]">Apply Now</button>
+	<button class="btn w-[140px] sm:w-[15vw] text-[16px] sm:text-[24px]"
+		>Apply Now</button
+	>
 
 	<!-- <p class="text-xl sm:text-2xl">Please Select Your language</p>
 	<div>
@@ -37,7 +39,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 
 		padding: 12px 20px;
 		transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-		font-size: 20px;
+
 		font-weight: bold;
 		border: 0;
 		outline-color: hsl(243, 31%, 60%);
@@ -46,7 +48,6 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		cursor: pointer;
 		margin-bottom: 50px;
 		margin-top: 30px;
-		width: 20vw;
 	}
 	.btn:hover {
 		color: #cfcece;
