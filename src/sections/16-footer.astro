@@ -6,7 +6,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
 <footer class="w-full pt-4">
-	<div class="foot md:grid md:grid-cols-[2fr,1fr,1fr] gap-4">
+	<div class="foot md:grid md:grid-cols-[2fr,1fr] gap-20">
 		<div class="text-justify">
 			<h2 class="font-extrabold text-justify text-[#3c005a]">
 				{t("footer_title_1")}
@@ -20,11 +20,11 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 				{t("footer_title_1_description_p2")}
 			</p>
 		</div>
-		<div class="md:text-center sm:text-left">
+		<!-- <div class="md:text-center sm:text-left">
 			<h3 class="text-[#3c005a] relative min-w-max md:min-w-fit">
 				{t("footer_title_4")}
-			</h3>
-			<ul class="list-none">
+			</h3> -->
+		<!-- <ul class="list-none">
 				<li>
 					<a class="text-[#800080] no-underline inline-block" href="#"
 						>{t("footer_title_4_s1")}</a
@@ -51,7 +51,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 					>
 				</li>
 			</ul>
-		</div>
+		</div> -->
 		<div class="relative">
 			<p
 				class="relative pb-1 pl-1 text-lg text-justify text-[#3c005a] font-semibold"
