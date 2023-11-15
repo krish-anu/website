@@ -27,7 +27,7 @@ const t = useTranslations(lang);
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Playfair+Display:wght@900&family=Poppins:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
 		<link
@@ -67,7 +67,16 @@ const t = useTranslations(lang);
 	html[lang="ta"] {
 		font-size: 14px;
 	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Playfair Display";
+	}
 	h2 {
 		@apply text-3xl;
+		font-weight: 900;
 	}
 </style>
