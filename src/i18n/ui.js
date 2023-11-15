@@ -151,7 +151,7 @@ export const ui = Object.freeze({
 		hero__title: "Sri Lanka's biggest pilot exams for G.C.E. (A/L) students",
 		find_your_examination_centres__tile: "Find your examination centres",
 		find_your_examination_centres__description:
-			"We have 67 examination centre networks covering almost the whole island. Choose your district to view the examination centres available.",
+			"We have 69 examination centre networks covering almost the whole island. Choose your district from the map, to view the available exam centres.",
 		looking_for_past_papers__title: "Looking for Mora Exam Past Papers?",
 		timetable__title: "Timetable",
 		committee__title: "Mora Exam - 2023 | Committee",
