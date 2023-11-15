@@ -30,7 +30,7 @@ export const defaultLang = "en";
  * @prop {string} meta__description
  * @prop {string} nav__timetable
  * @prop {string} nav__exam_centres
- * @prop {string} nav__past_papers
+ * @prop {string} nav__resources
  * @prop {string} nav__about
  * @prop {string} hero__title
  * @prop {string} find_your_examination_centres__tile
@@ -146,7 +146,7 @@ export const ui = Object.freeze({
 			"Mora Exams is the largest, island-wide pioneer exam for A/L students. It proves to be incredibly helpful before entering the final exams, providing access to past papers and model papers.",
 		nav__timetable: "Timetable",
 		nav__exam_centres: "Exam Centres",
-		nav__past_papers: "Past Papers",
+		nav__resources: "Resources",
 		nav__about: "About Us",
 		hero__title: "Sri Lanka's biggest pilot exams for G.C.E. (A/L) students",
 		find_your_examination_centres__tile: "Find your examination centres",
@@ -279,7 +279,7 @@ export const ui = Object.freeze({
 			"Mora Exams என்பது க.பொ.த (A/L) மாணவர்களுக்கான மிகப்பெரிய, நாடளாவிய பரீட்சையாகும். இறுதித் தேர்வுகளில் நுழைய போகும் மாணவர்களுக்கு இது நம்பமுடியாத அளவிற்கு உதவியாக இருக்கின்றது.",
 		nav__timetable: "பரீட்சை அட்டவணை",
 		nav__exam_centres: "பரீட்சை நிலையங்கள்",
-		nav__past_papers: "கடந்த கால வினாத்தாள்கள்",
+		nav__resources: "வளங்கள்",
 		nav__about: "எம்மைப் பற்றி",
 		hero__title:
 			"க. பொ. த. (உ/த) மாணவர்களுக்கான இலங்கையின்  மிகப்பெரிய முன்னோடி பரீட்சை",
