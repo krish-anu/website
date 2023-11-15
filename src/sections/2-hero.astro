@@ -17,9 +17,10 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		<!-- Welcome To<br /><span class="inline-block w-max">Mora&nbsp;Exams</span> -->
 	</h1>
 	<button class="btn w-[140px] sm:w-[15vw] text-[16px] sm:text-[24px]"
-		>Apply Now</button
+		>Apply Now<i
+			class="fa-solid fa-arrow-right translate-x-[10px] transition-transform"
+		></i></button
 	>
-
 	<!-- <p class="text-xl sm:text-2xl">Please Select Your language</p>
 	<div>
 		<button
@@ -33,6 +34,9 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 	</div> -->
 </section>
 <style>
+	button:hover i {
+		@apply translate-x-[20px];
+	}
 	.btn {
 		color: #fff;
 		background: linear-gradient(135deg, #852d91, #312a6c);

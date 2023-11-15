@@ -5,7 +5,7 @@ import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
-<section class="bg-cyan-100 w-full py-10 text-center" id="past-papers">
+<section class="w-full py-10 text-center" id="past-papers">
 	<h2 class="text-3xl mt-0">{t("looking_for_past_papers__title")}</h2>
 	<p class="text-xl">
 		{t("looking_for_past_papers__description")}
