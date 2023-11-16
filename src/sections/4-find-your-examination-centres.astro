@@ -4,7 +4,7 @@ import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
-<section class="bg-sky-200 mt-30 py-10 gap-2 md:gap-8" id="exam-centres">
+<section class="bg-extra-2-100 mt-30 py-10 gap-3" id="exam-centres">
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -22,7 +22,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 				d="m 58.947125,518.95075 0.76,0.35 0.27,-1.25 1.58,-0.24 -0.92,-1.03 0.17,-0.79 1.03,0 0.09,-0.75 1.9,0.97 2.04,-0.69 0.74,-1.57 2.68,-0.66 -1.2,-0.58 3.1,-1.57 0.63,-1.23 1.64,1.19 2.45,-0.58 -0.67,1.05 1.06,0.65 0.28,1.23 1.44,-0.33 1.76,0.72 1.59,3.06 1.27,0.12 4.17,-2.49 0.57,-1.54 3.69,-1.44 4.77,-3.93 4.819995,3.86 -0.999995,1.49 0.479995,0.97 4.54001,3.3 3.03,4.68 1.06,-0.46 1.03,0.97 0,0 0.99,2.55 -3.02,2.18 0.54,2.71 -0.45,5.48 -4.37,0.22 -1.09,1.92 -2.34,-0.95 1.73999,2.55 -0.07,5.43 1.7,4.91 2.41,-2.04 5.68999,-0.15 1.25,0.98 -0.12999,1.68 -1.73,1.25 -1.08,2.92 -1.72,-0.08 -2.35,6.07 -1.9,2.45 2,9.85 1.68,3.05 -0.6,3.41 0,0 -1.86,-0.31 -0.80001,1.88 -8.549995,-0.81 -0.45,1.67 -2.38,0.53 -0.75,1.82 -1.43,0.5 -0.96,2.75 -0.12,5.37 -3.04,0.14 -0.69,0.62 -1.99,-1.06 -0.97,1.17 -6.04,-3.27 -1.97,-0.25 -1.33,-2.96 0.11,-1.34 -2.63,0.87 -1.46,-0.39 -1.55,1.65 -6.19,-1.5 -2.36,0.89 -1.98,-2.33 -1.61,0.27 -0.88,-0.78 -1.25,1.28 -1.16,-0.91 -2.1,0.67 -0.73,-0.82 0.63,-0.87 -3.07,0.34 -1.17,-0.77 0.85,-3.88 -2.6,-0.07 0,0 -0.28,-4.87 -10.3,-40.47 0.39,-1.06 1.34,-0.22 1.01,1.4 -1.51,3.92 1.9,6.17 1.23,1.18 0.06,3.03 1.74,2.13 -0.45,1.68 1.29,0.95 1.4,-0.95 0.73,-2.8 0,1.74 1.01,0.95 0.9,-1.74 -1.12,-9.47 -3.64,-6.33 -2.07,0.95 -0.21,1.15 -0.28,-0.5 -0.62,0.5 0.06,-2.41 -0.84,-1.34 2.18,-3.48 0.62,-9.36 1.51,-0.17 -1.18,-0.38 0,0 1.33,0.1 0.84,-0.79 1.46,1.4 2.88,-2.66 2.55,1.86 1.67,-0.21 0.4,-1.14 1.09,1.05 0.95,-0.95 -0.51,2.67 1.56,-0.46 -0.05,-1.46 1.99,-0.3 0.31,-0.95 3.14,1.67 z"
 				id="LK-12"
 				class="exam-center"
-				data-tile="Gampaha"></path>
+				data-title="Gampaha"></path>
 			<title>Gampaha</title>
 		</g>
 		<path
@@ -137,11 +137,11 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 			class="exam-center"></path>
 	</svg>
 
-	<div class="">
+	<div class="mx-auto">
 		<h2 class="text-3xl mt-0 max-w-[30ch]">
 			{t("find_your_examination_centres__tile")}
 		</h2>
-		<p class="text-xl">
+		<p class="text-xl max-w-prose">
 			{t("find_your_examination_centres__description")}
 		</p>
 
@@ -165,9 +165,10 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 	import EXAM_CENTRES_DATA from "../EXAM_CENTRES.json";
 	import { ExamCentreDetailsTable } from "../components/react/ExamCentreDetailsTable";
 	import { createRoot } from "react-dom/client";
+	import { getLangFromUrl } from "../i18n/utils";
 
 	/**
-	 * @type {typeof EXAM_CENTRES_DATA.districts[number] | null}
+	 * @type {null | typeof import("../EXAM_CENTRES.json").districts[number]}
 	 */
 	let selectedDistrict = null;
 	let examCentreDetailsRoot = null;
@@ -194,6 +195,22 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 			console.error("unknown district:", district);
 			return;
 		}
+
+		const alreadySelected = document.querySelector("#SL-map path.selected");
+		if (alreadySelected) {
+			alreadySelected.classList.remove("selected");
+		}
+
+		const selectedPath = document.querySelector(
+			`path[data-title='${selectedDistrict.name_en}']`,
+		);
+		console.log(selectedPath);
+		if (selectedPath instanceof SVGPathElement) {
+			selectedPath.classList.add("selected");
+		} else {
+			console.warn("Invalid path", selectedPath);
+		}
+
 		const container = document.querySelector("#exam-centre-details");
 		if (!(container instanceof HTMLElement)) {
 			console.error("unknown container:", container);
@@ -204,10 +221,11 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 			examCentreDetailsRoot = createRoot(container);
 		}
 
+		const language = getLangFromUrl(new URL(window.location.href));
 		examCentreDetailsRoot.render(
 			ExamCentreDetailsTable({
 				data: selectedDistrict,
-				languagePreference: "en",
+				languagePreference: language,
 			}),
 		);
 	}
@@ -232,9 +250,15 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		@apply flex flex-col md:flex-row h-full;
 	}
 	#SL-map {
-		@apply fill-gray-600 w-fit max-w-[80vw] max-h-[700px];
+		@apply fill-slate-500 w-fit max-w-[300px] mx-auto;
 	}
 	.exam-center {
-		@apply fill-blue-600 stroke-ultra-violet-300 cursor-pointer;
+		@apply fill-extra-2-600 stroke-ultra-violet-300 cursor-pointer;
+		transition-property: fill, stroke;
+		transition-duration: 200ms;
+		transition-timing-function: ease;
+	}
+	.exam-center.selected {
+		@apply stroke-extra-1-700 stroke-2 fill-secondary-600;
 	}
 </style>
