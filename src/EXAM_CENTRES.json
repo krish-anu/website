@@ -81,13 +81,13 @@
 			"name_ta": "பதுளை",
 			"coordinators": [
 				{
-					"name_en": "Viknesh Sir",
+					"name_en": "Vignesh Sir",
 					"contact_number": "772467190"
 				}
 			],
 			"centers": [
 				{
-					"name_en": "Bandarawela Tamil Central college",
+					"name_en": "B/Bandarawela Tamil Central college",
 					"name_ta": "பண்டாரவளை தமிழ் மத்திய கல்லூரி"
 				},
 				{
@@ -95,7 +95,7 @@
 					"name_ta": "சரஸ்வதி மத்திய கல்லூரி"
 				},
 				{
-					"name_en": "Welimada muslim Maha Vidyalaya",
+					"name_en": "B/Welimada muslim Maha Vidyalaya",
 					"name_ta": "வேலிமட முஸ்லிம் மகா வித்யாலயா"
 				}
 			]
@@ -111,31 +111,31 @@
 			],
 			"centers": [
 				{
-					"name_en": "Alighar Central College",
+					"name_en": "BT/BC/Alighar Central College",
 					"name_ta": "அலிகார் மத்திய கல்லூரி"
 				},
 				{
-					"name_en": "Mahajana College",
+					"name_en": "BT/BT/Mahajana College",
 					"name_ta": "மகாஜனா கல்லூரி"
 				},
 				{
-					"name_en": "Meera Balika National School",
+					"name_en": "BT/BC/Meera Balika National School",
 					"name_ta": "மீரா பாலிகா தேசிய பள்ளி"
 				},
 				{
-					"name_en": "Shivananda National School",
+					"name_en": "BT/Shivananda National School",
 					"name_ta": "சிவானந்தா தேசிய பள்ளி"
 				},
 				{
-					"name_en": "Paddirupu Maha Vidyalaya",
+					"name_en": "BT/Paddirupu Maha Vidyalaya",
 					"name_ta": "பத்திருபு மகா வித்யாலயம்"
 				},
 				{
-					"name_en": "Chenkalady Central College",
+					"name_en": "BT/KK/Chenkalady Central College",
 					"name_ta": "செங்களடி மத்திய கல்லூரி"
 				},
 				{
-					"name_en": "Valaichenai Hindu College",
+					"name_en": "BT/Valaichenai Hindu College",
 					"name_ta": "வாலைச்சேனை இந்து கல்லூரி"
 				}
 			]
