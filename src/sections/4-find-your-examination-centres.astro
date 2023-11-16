@@ -32,8 +32,9 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 
 	/**
 	 * @param {string} district
+	 * @param {boolean} shouldScroll
 	 */
-	function updateDistrict(district) {
+	function updateDistrict(district, shouldScroll = true) {
 		console.log("select", district);
 		selectedDistrict = null;
 
@@ -86,14 +87,16 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 			}),
 		);
 
-		container.scrollIntoView();
+		if (shouldScroll) {
+			container.scrollIntoView();
+		}
 	}
 
 	const slMap = document.querySelector("#SL-map");
 	if (!(slMap instanceof SVGElement)) {
 		console.error("slMap is not an SVGElement");
 	} else {
-		updateDistrict("Ampara");
+		updateDistrict("Ampara", false);
 		slMap.addEventListener("click", (event) => {
 			const targetElement = event.target;
 			console.log(targetElement);
