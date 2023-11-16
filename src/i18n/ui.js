@@ -278,6 +278,7 @@ export const ui = Object.freeze({
 		achivers_ranking_7: "District First(JAFFNA)",
 		achivers_ranking_8: "District First(JAFFNA)",
 		name__tla: "Tamil Literary Association",
+		feedback_snekan_name: "Snekan",
 	},
 	ta: {
 		index__title: "மொறா பரீட்சைகள்",
@@ -417,5 +418,6 @@ export const ui = Object.freeze({
 		achivers_ranking_7: "யாழ் மாவட்டத்தில் முதலிடம்",
 		achivers_ranking_8: "யாழ் மாவட்டத்தில் முதலிடம்",
 		name__tla: "தமிழ் இலக்கியக் கழகம்",
+		feedback_snekan_name: "சினேகன்",
 	},
 });
