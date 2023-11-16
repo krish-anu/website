@@ -65,6 +65,10 @@ export const getStaticPaths = (() => {
 	body {
 		@apply text-mora-black-950;
 	}
+	body:has(#nav-bar-toggle:checked),
+	body.disable-scrolling {
+		overflow: hidden;
+	}
 	body > * {
 		@apply px-[var(--body-margin-x)];
 	}
