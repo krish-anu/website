@@ -11,57 +11,57 @@
 			],
 			"centers": [
 				{
-					"name_en": "Vipulananda Central College, Karaitivu",
+					"name_en": "KM/Vipulananda Central College, Karaitivu",
 					"name_ta": "விபுலாநந்த மத்திய கல்லூரி, கரைதீவு"
 				},
 				{
-					"name_en": "Zahira College, Kalmunai",
+					"name_en": "KM/Zahira College, Kalmunai",
 					"name_ta": "ஸாஹிரா கல்லூரி, கல்முனை"
 				},
 				{
-					"name_en": "Thambiluvil Mathya Maha Vidyalayam",
+					"name_en": "KM/TK/Thambiluvil Mathya Maha Vidyalayam",
 					"name_ta": "தம்பிலுவில் மத்திய மகா வித்யாலயம்"
 				},
 				{
-					"name_en": "Carmel Fatima College, Sammanthurai",
-					"name_ta": "கார்மேல் பாதிமா கல்லூரி, சம்மாந்துரை"
+					"name_en": "KM/KM Carmel Fatima College",
+					"name_ta": "கார்மேல் பாதிமா கல்லூரி"
 				},
 				{
 					"name_en": "Muslim Madya Maha Vidiyalayam, Sammanthurai",
 					"name_ta": "முஸ்லிம் மத்ய மகா வித்யாலயம், சம்மாந்துரை"
 				},
 				{
-					"name_en": "Al-Ashraq M.M.V, Nintavur",
+					"name_en": "KM/AI-Ashraq M.M.V, Nintavur",
 					"name_ta": "அல்-அஷ்ராக் எம்.எம்.வி, நின்டாவூர்"
 				},
 				{
-					"name_en": "As-Siraj Maha Vidyalayam, Pottuvil",
-					"name_ta": "அஸ்-ஸிராஜ் மகா வித்யாலயம், பொட்டுவில்"
+					"name_en": "AK/As-Siraj Maha Vidyalayam",
+					"name_ta": "அஸ்-ஸிராஜ் மகா வித்யாலயம்"
 				},
 				{
-					"name_en": "Al- Irfan Ladies College, Pottuvil",
+					"name_en": "AK/AI-Irfan Ladies College, Pottuvil",
 					"name_ta": "அல்- இர்ஃபான் லேடிஸ் கல்லூரி, பொட்டுவில்"
 				},
 				{
-					"name_en": "AL -Ashraf Central college, Irakkama",
+					"name_en": "KM/ST/AL-Ashraf Central College, Irakkama",
 					"name_ta": "எல் - அஷ்ரப் சென்ட்ரல் கல்லூரி, இராக்கம"
 				},
 				{
-					"name_en": "Al-Hamra Maha Vidyalaya, Oluvil",
+					"name_en": "KM/AK/AI-Hamra Maha Vidyalaya, Oluvil",
 					"name_ta": "அல்-ஹம்ரா மகா வித்யாலயம், ஒலுவில்"
 				},
 				{
-					"name_en": "Sri Rama Krishna College, Thirukovil",
-					"name_ta": "ஸ்ரீ ராமா கிருஷ்ணா கல்லூரி, திருக்கோவில்"
+					"name_en": "KM/TK/Sri Rama Krishna College",
+					"name_ta": "ஸ்ரீ ராமா கிருஷ்ணா கல்லூரி"
 				},
 				{
-					"name_en": "Addalaichenai M.M.V",
+					"name_en": "AK/Addalaichenai M.M.V",
 					"name_ta": "அத்தாலைச்சேனை எம்.எம்.வி"
 				}
 			]
 		},
 		{
-			"name_en": "Anuradhapura",
+			"name_en": "Anurathapura",
 			"name_ta": "அனுராதபுரம்",
 			"coordinators": [
 				{
@@ -71,7 +71,7 @@
 			],
 			"centers": [
 				{
-					"name_en": "An-Noor Mahavidyalaya, Ikkirigollawa",
+					"name_en": "A/An-Noor Mahavidyalaya, Ikkirigollawa",
 					"name_ta": "அன்-நூர் மகாவித்யாலயா, இக்கிரிகொல்லாவா"
 				}
 			]
