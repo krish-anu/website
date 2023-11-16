@@ -42,7 +42,7 @@ export function ExamCentreDetailsTable(props) {
 				</p>
 			</div>
 			<div className="mt-5">
-				<ul className="list-none m-0 p-0 grid gap-y-4 gap-x-2 grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]">
+				<ul className="list-none m-0 p-0 grid gap-y-2 lg:gap-y-4 gap-x-2 grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]">
 					{districtInfo.centers.map((centre, index) => (
 						<ExamCentreDetails
 							centre={centre}
@@ -70,12 +70,12 @@ function ExamCentreDetails(props) {
 
 	return (
 		<li key={centre.name_en} className="w-fit">
-			<h4 className="my-0 text-xl">{centre[langKey]}</h4>
+			<h4 className="my-0 text-lg lg:text-xl">{centre[langKey]}</h4>
 			{/* @ts-ignore */}
 			{typeof centre.coordinator == "undefined" ? null : (
 				<p className="mt-2">
 					{/* @ts-ignore */}
-					<b>{centre.coordinator.name_en}</b> (
+					<b>{centre.coordinator.name_en}</b> ({/* @ts-ignore */}
 					{centre.coordinator.contact_number})
 				</p>
 			)}
