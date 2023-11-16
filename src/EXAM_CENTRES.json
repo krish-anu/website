@@ -11,21 +11,12 @@
 			],
 			"centers": [
 				{
-<<<<<<< HEAD
-					"name_en": "KM/Vipulananda Central College, Karaitivu",
-					"name_ta": "விபுலாநந்த மத்திய கல்லூரி, காரைதீவு"
-				},
-				{
-					"name_en": "KM/Zahira College, Kalmunai",
-					"name_ta": "ஸாஹிரா கல்லூரி, கல்முனை"
-=======
 					"name_en": "Vipulananda Central College, Karaitivu",
 					"name_ta": "விபுலானந்தா மத்திய கல்லூரி, காரைதீவு"
 				},
 				{
 					"name_en": "Zahira College, Kalmunai",
 					"name_ta": "சாஹிரா கல்லூரி, கல்முனை"
->>>>>>> 561640a6e8672e53cb44f8be68b94bcbf41c58af
 				},
 				{
 					"name_en": "KM/TK/Thambiluvil Mathya Maha Vidyalayam",
