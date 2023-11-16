@@ -424,6 +424,6 @@ export const ui = Object.freeze({
 		name__tla: "தமிழ் இலக்கியக் கழகம்",
 		feedback_snekan_name: "சினேகன்",
 		hero_button: "விண்ணப்பிக்க",
-		looking_for_past_papers__button: "கடந்தகால  வினாத்தாள்களை  பார்வையிட ",
+		looking_for_past_papers__button: "வினாத்தாள்கள்",
 	},
 });
