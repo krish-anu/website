@@ -12,7 +12,7 @@
 			"centers": [
 				{
 					"name_en": "KM/Vipulananda Central College, Karaitivu",
-					"name_ta": "விபுலாநந்த மத்திய கல்லூரி, கரைதீவு"
+					"name_ta": "விபுலாநந்த மத்திய கல்லூரி, காரைதீவு"
 				},
 				{
 					"name_en": "KM/Zahira College, Kalmunai",
@@ -24,31 +24,31 @@
 				},
 				{
 					"name_en": "KM/KM Carmel Fatima College",
-					"name_ta": "கார்மேல் பாதிமா கல்லூரி"
+					"name_ta": "கார்மேல் பாத்திமா கல்லூரி"
 				},
 				{
 					"name_en": "Muslim Madya Maha Vidiyalayam, Sammanthurai",
-					"name_ta": "முஸ்லிம் மத்ய மகா வித்யாலயம், சம்மாந்துரை"
+					"name_ta": "முஸ்லிம் மத்திய மகா வித்தியாலயம், சம்மாந்துரை"
 				},
 				{
-					"name_en": "KM/AI-Ashraq M.M.V, Nintavur",
+					"name_en": "KM/Al-Ashraq M.M.V, Nintavur",
 					"name_ta": "அல்-அஷ்ராக் எம்.எம்.வி, நின்டாவூர்"
 				},
 				{
 					"name_en": "AK/As-Siraj Maha Vidyalayam",
-					"name_ta": "அஸ்-ஸிராஜ் மகா வித்யாலயம்"
+					"name_ta": "அஸ்-ஸிராஜ் மகா வித்தியாலயம்"
 				},
 				{
-					"name_en": "AK/AI-Irfan Ladies College, Pottuvil",
-					"name_ta": "அல்- இர்ஃபான் லேடிஸ் கல்லூரி, பொட்டுவில்"
+					"name_en": "AK/Al-Irfan Ladies College, Pottuvil",
+					"name_ta": "அல்- இர்ஃபான் மகளிர் கல்லூரி, பொட்டுவில்"
 				},
 				{
-					"name_en": "KM/ST/AL-Ashraf Central College, Irakkama",
-					"name_ta": "எல் - அஷ்ரப் சென்ட்ரல் கல்லூரி, இராக்கம"
+					"name_en": "KM/ST/Al-Ashraf Central College, Irakkama",
+					"name_ta": "எல் - அஷ்ரப் மத்திய கல்லூரி, இராக்கம"
 				},
 				{
-					"name_en": "KM/AK/AI-Hamra Maha Vidyalaya, Oluvil",
-					"name_ta": "அல்-ஹம்ரா மகா வித்யாலயம், ஒலுவில்"
+					"name_en": "KM/AK/Al-Hamra Maha Vidyalaya, Oluvil",
+					"name_ta": "அல்-ஹம்ரா மகா வித்தியாலயம், ஒலுவில்"
 				},
 				{
 					"name_en": "KM/TK/Sri Rama Krishna College",
@@ -72,7 +72,7 @@
 			"centers": [
 				{
 					"name_en": "A/An-Noor Mahavidyalaya, Ikkirigollawa",
-					"name_ta": "அன்-நூர் மகாவித்யாலயா, இக்கிரிகொல்லாவா"
+					"name_ta": "அன்-நூர் மகாவித்தியாலயா, இக்கிரிகொல்லாவா"
 				}
 			]
 		},
@@ -120,15 +120,15 @@
 				},
 				{
 					"name_en": "BT/BC/Meera Balika National School",
-					"name_ta": "மீரா பாலிகா தேசிய பள்ளி"
+					"name_ta": "மீரா பாலிகா தேசிய பாடசாலை"
 				},
 				{
 					"name_en": "BT/Shivananda National School",
-					"name_ta": "சிவானந்தா தேசிய பள்ளி"
+					"name_ta": "சிவானந்தா தேசிய பாடசாலை"
 				},
 				{
 					"name_en": "BT/Paddirupu Maha Vidyalaya",
-					"name_ta": "பத்திருபு மகா வித்யாலயம்"
+					"name_ta": "பத்திருப்பு மகா வித்தியாலயம்"
 				},
 				{
 					"name_en": "BT/KK/Chenkalady Central College",
@@ -152,7 +152,7 @@
 			"centers": [
 				{
 					"name_en": "Hindu Ladies College, Colombo-06",
-					"name_ta": "இந்து லேடிஸ் கல்லூரி, கொழும்பு-06"
+					"name_ta": "இந்து மகளிர் கல்லூரி, கொழும்பு-06"
 				},
 				{
 					"name_en": "Vivekananda National College, Kotahena",
@@ -193,14 +193,14 @@
 			],
 			"centers": [
 				{
-					"name_en": "Malharus Sulhiya Central College",
+					"name_en": "G/Malharus Sulhiya Central College",
 					"name_ta": "மல்ஹாருஸ் சுல்ஹியா மத்திய கல்லூரி"
 				}
 			]
 		},
 		{
 			"name_en": "Jaffna",
-			"name_ta": "யாழ்",
+			"name_ta": "யாழ்ப்பாணம்",
 			"coordinators": [
 				{
 					"name_en": "Navaneethan",
@@ -222,19 +222,19 @@
 				},
 				{
 					"name_en": "Jaffna Hindu Ladies’ College",
-					"name_ta": "யாழ் இந்து லேடிஸ் கல்லூரி"
+					"name_ta": "யாழ் இந்து மகளிர் கல்லூரி"
 				},
 				{
 					"name_en": "Chavakachcheri Hindu College",
 					"name_ta": "சாவகச்சேரி இந்து கல்லூரி"
 				},
 				{
-					"name_en": "Hartley College",
-					"name_ta": "ஹார்ட்லி கல்லூரி"
+					"name_en": "J/Nelliady Central College",
+					"name_ta": "யாழ் நெல்லியடி மத்திய கல்லூரி"
 				},
 				{
-					"name_en": "Vada Central Ladies’ College",
-					"name_ta": "வாடா சென்ட்ரல் லேடிஸ் கல்லூரி"
+					"name_en": "J/Methodist Girls High School",
+					"name_ta": "யாழ் மெதடிஸ்ட் மகளிர் உயர்தரப் பாடசாலை"
 				},
 				{
 					"name_en": "Ramanathan College",
@@ -242,7 +242,7 @@
 				},
 				{
 					"name_en": "Kopay Christian College",
-					"name_ta": "கொபாய் கிறிஸ்டியன் கல்லூரி"
+					"name_ta": "கோப்பாய் கிறிஸ்டியன் கல்லூரி"
 				}
 			]
 		},
@@ -272,7 +272,7 @@
 						"contact_number": "0766569629"
 					},
 					"name_en": "K/Akurana Balika MMV",
-					"name_ta": "அக்குரானா பாலிகா மகா வித்யாலயம்"
+					"name_ta": "அக்குரானா பாலிகா மகா வித்தியாலயம்"
 				},
 				{
 					"coordinator": {
@@ -294,14 +294,14 @@
 						"contact_number": "0764807648"
 					},
 					"name_en": "Ceylon Ladies' Campus, Warakapola",
-					"name_ta": "சிலான் லேடிஸ் கேம்பஸ், வாரகபொல"
+					"name_ta": "சிலான் மகளிர் வளாகம், வாரகபொல"
 				},
 				{
 					"coordinator": {
 						"name_en": "Afshan",
 						"contact_number": "0775461645"
 					},
-					"name_en": "Zahira College, Mawanella",
+					"name_en": "KG/Mw/Zahira College, Mawanella",
 					"name_ta": "ஸாஹிரா கல்லூரி, மாவனெல்லா"
 				}
 			]
@@ -318,7 +318,7 @@
 			"centers": [
 				{
 					"name_en": "Kilinochchi Madya Maha Vidyalayam",
-					"name_ta": "கிளிநொச்சி மத்திய மகா வித்யாலயம்"
+					"name_ta": "கிளிநொச்சி மத்திய மகா வித்தியாலயம்"
 				}
 			]
 		},
@@ -332,23 +332,23 @@
 						"contact_number": "0777123113"
 					},
 					"name_en": "Annoor National School",
-					"name_ta": "அன்நூர் தேசிய பள்ளி"
+					"name_ta": "அன்நூர் தேசிய பாடசாலை "
 				},
 				{
 					"coordinator": {
 						"name_en": "Abdullah",
 						"contact_number": "0726463103"
 					},
-					"name_en": "Madeena National School, Giriulla",
-					"name_ta": "மதீனா தேசிய பள்ளி, கிரில்லா"
+					"name_en": "Ku/Giri/Madeena National School, Giriulla",
+					"name_ta": "மதீனா தேசிய பாடசாலை, கிரில்லா"
 				},
 				{
 					"coordinator": {
 						"name_en": "Rifas Sir",
 						"contact_number": "0771735517, 0740166199"
 					},
-					"name_en": "Kekunagolla Central College (National School) (ASDP)",
-					"name_ta": "கேகுனகொல்ல மத்திய கல்லூரி (தேசிய பள்ளி) (ASDP)"
+					"name_en": "Giri/Kekunagolla Central College (National School)/(ASDP)",
+					"name_ta": "கேகுனகொல்ல மத்திய கல்லூரி (தேசிய பாடசாலை) (ASDP)"
 				}
 			]
 		},
@@ -363,11 +363,11 @@
 			],
 			"centers": [
 				{
-					"name_en": "St. Xavier's Boys' National College",
-					"name_ta": "செயிண்ட் ஜேவியர்ஸ் பாய்ஸ் தேசிய கல்லூரி"
+					"name_en": "St.Xavier's Boys' National College",
+					"name_ta": "செயிண்ட் ஜேவியர்ஸ் ஆண்கள் தேசிய கல்லூரி"
 				},
 				{
-					"name_en": "Fatima M.M.V, Pesalai",
+					"name_en": "Mn/Fatima M.M.V, Pesalai",
 					"name_ta": "ஃபாத்திமா எம்.எம்.வி, பேசாலை"
 				}
 			]
@@ -383,14 +383,14 @@
 			],
 			"centers": [
 				{
-					"name_en": "Pakkiyam National School",
-					"name_ta": "பாக்கியம் தேசிய பள்ளி"
+					"name_en": "Pakkiyam National College",
+					"name_ta": "பாக்கியம் தேசிய  கல்லூரி "
 				}
 			]
 		},
 		{
 			"name_en": "Matara",
-			"name_ta": "மாத்தரை",
+			"name_ta": "மாத்தறை",
 			"centers": [
 				{
 					"coordinator": {
@@ -398,15 +398,15 @@
 						"contact_number": "0764328807, 0716040807"
 					},
 					"name_en": "DFEC Science Project, Dickwella",
-					"name_ta": "டிஎஃபெக் அறிவியல் சிந்தனை, டிக்வெல்ல"
+					"name_ta": "DFEC அறிவியல் சிந்தனை, டிக்வெல்ல"
 				},
 				{
 					"coordinator": {
 						"name_en": "Faizer Sir",
 						"contact_number": "0779931493, 0778931493"
 					},
-					"name_en": "Arafa National School, Weligama",
-					"name_ta": "அரஃபா தேசிய பள்ளி, வெலிகாம"
+					"name_en": "MR/Arafa National School, Weligama",
+					"name_ta": "அரஃபா தேசிய பாடசாலை, வெலிகாம"
 				}
 			]
 		},
@@ -422,7 +422,7 @@
 			"centers": [
 				{
 					"name_en": "Mulliyawalai Vidyananda College",
-					"name_ta": "முள்ளியவாலை வித்யாநந்தா கல்லூரி"
+					"name_ta": "முள்ளியவலை வித்யாநந்தா கல்லூரி"
 				},
 				{
 					"name_en": "Puthukkudiyiruppu Central College",
@@ -430,24 +430,24 @@
 				},
 				{
 					"name_en": "Mullaithivu Maha Vidyalayam",
-					"name_ta": "முல்லைத்தீவு மகா வித்யாலயம்"
+					"name_ta": "முல்லைத்தீவு மகா வித்தியாலயம்"
 				},
 				{
-					"name_en": "Visvamadu Maha Vidyalayam",
-					"name_ta": "விஸ்வமாடு மகா வித்யாலயம்"
+					"name_en": "Mu/Visvamadu Maha Vidyalayam",
+					"name_ta": "விஸ்வமடு மகா வித்தியாலயம்"
 				},
 				{
-					"name_en": "Mallavi Central College",
+					"name_en": "Mu/Mallavi Central College",
 					"name_ta": "மல்லாவி மத்திய கல்லூரி"
 				},
 				{
-					"name_en": "Udayarkaddu Maha Vidyalayam",
+					"name_en": "Mu/Udayarkaddu Maha Vidyalayam",
 					"name_ta": "உடையார்கட்டு மகா வித்யாலயம்"
 				}
 			]
 		},
 		{
-			"name_en": "Nuwara Eliya",
+			"name_en": "Nuwara-Eliya",
 			"name_ta": "நுவரெலியா",
 			"coordinators": [
 				{
@@ -462,11 +462,11 @@
 				},
 				{
 					"name_en": "Talawakelle Tamil Maha Vidyalayam",
-					"name_ta": "தலவாக்கல் தமிழ் மகா வித்யாலயம்"
+					"name_ta": "தலவாக்கல தமிழ் மகா வித்தியாலயம்"
 				},
 				{
 					"name_en": "Kotagala Tamil Maha Vidyalayam",
-					"name_ta": "கொடகல தமிழ் மகா வித்யாலயம்"
+					"name_ta": "கொடகல தமிழ் மகா வித்தியாலயம்"
 				}
 			]
 		},
@@ -505,20 +505,20 @@
 			],
 			"centers": [
 				{
-					"name_en": "R.K.M Sri Koneswara Hindu College",
+					"name_en": "T/R.K.M Sri Koneswara Hindu College",
 					"name_ta": "ஆர்.கே.எம் ஸ்ரீ கோணேஸ்வர இந்து கல்லூரி"
 				},
 				{
-					"name_en": "Kinniya Al-Hira Muslim Maha Vidyalayam",
-					"name_ta": "கின்னியா அல்-ஹீரா முஸ்லிம் மகா வித்யாலயம்"
+					"name_en": "T/Kinniya Al-Hira Muslim Maha Vidyalayam",
+					"name_ta": "கின்னியா அல்-ஹீரா முஸ்லிம் மகா வித்தியாலயம்"
 				},
 				{
-					"name_en": "Mutur Central College",
+					"name_en": "T/Mu/Mutur Central College",
 					"name_ta": "மூட்டூர் மத்திய கல்லூரி"
 				},
 				{
-					"name_en": "Fathima Ladies College",
-					"name_ta": "ஃபாத்திமா லேடிஸ் கல்லூரி"
+					"name_en": "T/MU/Fathima Ladies' College",
+					"name_ta": "ஃபாத்திமா மகளிர் கல்லூரி"
 				}
 			]
 		},
@@ -533,20 +533,20 @@
 			],
 			"centers": [
 				{
-					"name_en": "Rambaikkulam Girls Maha Vidyalayam",
-					"name_ta": "ரம்பைக்குளம் பெண் மகா வித்யாலயம்"
+					"name_en": "V/Rambaikkulam Girls Maha Vidyalayam",
+					"name_ta": "ரம்பைக்குளம் பெண்கள் மகா வித்தியாலயம்"
 				},
 				{
-					"name_en": "Saivapragasa Ladies College",
-					"name_ta": "சைவப்ரகாச லேடிஸ் கல்லூரி"
+					"name_en": "V/Saivapragasa Ladies' College",
+					"name_ta": "சைவப்ரகாச மகளிர் கல்லூரி"
 				},
 				{
-					"name_en": "Vavuniya Tamil Madhya Maha Vidyalayam",
-					"name_ta": "வவுனியா தமிழ் மத்திய மகா வித்யாலயம்"
+					"name_en": "V/Vavuniya Tamil Madhya Maha Vidyalayam",
+					"name_ta": "வவுனியா தமிழ் மத்திய மகா வித்தியாலயம்"
 				},
 				{
-					"name_en": "Cheddikulam Maha Vidyalayam",
-					"name_ta": "செட்டிகுலம் மகா வித்யாலயம்"
+					"name_en": "V/Cheddikulam Maha Vidyalayam",
+					"name_ta": "செட்டிகுலம் மகா வித்தியாலயம்"
 				}
 			]
 		}
