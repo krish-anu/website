@@ -5,7 +5,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<div class="body1">
+<div class="body1" id="timetable">
 	<h2 class="text-center mt-5">{t("timetable__title")}</h2>
 	<div class="ag-format-container">
 		<div class="ag-courses_box">
