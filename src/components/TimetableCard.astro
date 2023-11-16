@@ -1,0 +1,169 @@
+---
+import { defaultLang } from "../i18n/ui";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+interface Subject {
+	name_en: string;
+	name_ta: string;
+	time: string;
+	icon: string;
+}
+
+interface Props {
+	date: Date;
+	subjects: Subject[];
+}
+
+const { date, subjects } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+
+let dateFormatLang = defaultLang;
+if (lang == "en") {
+	dateFormatLang = "en-GB";
+} else if (lang == "ta") {
+	dateFormatLang = "ta-IN";
+}
+const dateFormat = Intl.DateTimeFormat(dateFormatLang, {
+	weekday: "short",
+	year: "numeric",
+	month: "2-digit",
+	day: "2-digit",
+});
+const [dayOfWeek, dateString] = dateFormat.format(date).split(", ");
+const displayDate = dateString.concat(" - ", dayOfWeek.toUpperCase());
+---
+
+<div class="ag-courses_item">
+	<a class="ag-courses-item_link">
+		<div class="ag-courses-item_bg"></div>
+		<div class="ag-courses-item_date-box">
+			<h3 class="ag-courses-item_date">{displayDate}</h3>
+		</div>
+		<ul class="ag-courses-item_title p-0 text-base lg:text-xl !leading-snug">
+			{
+				subjects.map((subject) => {
+					return (
+						<li class="flex flex-col">
+							<span class="font-semibold">
+								<i
+									class={`fa-solid ${subject.icon} fa-beat-fade pr-3 text-xl`}
+								/>
+								{subject[`name_${lang}`]}
+							</span>
+							<span class="font-medium text-xl">{subject.time}</span>
+						</li>
+					);
+				})
+			}
+			<!-- <span class="font-[600]">
+				<i class="fa-solid fa-square-root-variable fa-beat-fade px-3 text-3xl">
+				</i>{t("timetable__date25_sub1")}
+			</span>
+			<br />
+			<span class="sm:ml-[20px]">1.30 P.m - 4.40 P.m</span>
+			<br />
+			<span class="font-[600]">
+				<i class="fa-solid fa-stethoscope fa-beat-fade px-3 text-3xl"></i>
+				{t("timetable__date25_sub2")}</span
+			>
+			<br />
+			<span class="sm:ml-[20px]">1.30 P.m - 3.30 P.m</span>
+			<span class="article-number"></span> -->
+		</ul>
+	</a>
+</div>
+
+<style>
+	.ag-courses_item {
+		@apply rounded-lg cursor-pointer overflow-hidden;
+		-ms-flex-preferred-size: calc(33.33333% - 30px);
+		flex-basis: calc(33.33333% - 30px);
+	}
+	.ag-courses-item_link {
+		@apply h-full block overflow-hidden px-5 py-4 bg-extra-1-600 relative opacity-100;
+		/* background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%); */
+	}
+	.ag-courses-item_link:hover,
+	.ag-courses-item_link:hover .ag-courses-item_date {
+		text-decoration: none;
+		color: #fff;
+	}
+	.ag-courses-item_link:hover .ag-courses-item_bg {
+		-webkit-transform: scale(10);
+		-ms-transform: scale(10);
+		transform: scale(10);
+	}
+	.ag-courses-item_title {
+		@apply text-white z-[2] relative m-0 mb-5 overflow-hidden flex gap-3 flex-col;
+	}
+	.ag-courses-item_date-box {
+		@apply z-[2] relative text-2xl text-mora-black-950;
+	}
+	.ag-courses-item_date {
+		@apply font-semibold mt-0 transition-colors duration-500 text-ultra-violet-950;
+		/* color: #270722; */
+	}
+	.ag-courses-item_bg {
+		@apply transition-all duration-500;
+		height: 180px;
+		width: 180px;
+		background-color: #490665;
+
+		z-index: 1;
+		position: absolute;
+		top: -95px;
+		right: -95px;
+
+		border-radius: 60%;
+	}
+	.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+		background-color: #490665;
+	}
+	.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+		background-color: #490665;
+	}
+	.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+		background-color: #490665;
+	}
+	.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+		background-color: #490665;
+	}
+	.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+		background-color: #490665;
+	}
+
+	@media only screen and (max-width: 979px) {
+		.ag-courses_item {
+			-ms-flex-preferred-size: calc(50% - 30px);
+			flex-basis: calc(50% - 30px);
+		}
+		.ag-courses-item_title {
+			font-size: 24px;
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		.ag-format-container {
+			width: 96%;
+		}
+	}
+	@media only screen and (max-width: 639px) {
+		.ag-courses_item {
+			-ms-flex-preferred-size: 100%;
+			flex-basis: 100%;
+		}
+		.ag-courses-item_title {
+			min-height: 72px;
+			line-height: 1;
+
+			font-size: 28px;
+		}
+		.ag-courses-item_link {
+			padding: 22px 40px;
+		}
+		.ag-courses-item_date-box {
+			font-size: 20px;
+		}
+	}
+</style>

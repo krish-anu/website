@@ -1,4 +1,5 @@
 ---
+import TimetableCard from "../components/TimetableCard.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -9,137 +10,96 @@ const t = useTranslations(lang);
 	<h2 class="text-center mt-5">{t("timetable__title")}</h2>
 	<div class="ag-format-container">
 		<div class="ag-courses_box">
-			<div class="ag-courses_item">
-				<a class="ag-courses-item_link">
-					<div class="ag-courses-item_bg"></div>
-					<div class="ag-courses-item_date-box">
-						<span class="ag-courses-item_date"> 25.11.2023</span>
-					</div>
-					<div class="ag-courses-item_title p-0">
-						<p class="text-[16px] lg:text-[22px] !leading-snug">
-							<span class="font-[600]"
-								><i
-									class="fa-solid fa-square-root-variable fa-beat-fade px-3 text-3xl"
-								></i>{t("timetable__date25_sub1")}</span
-							><br /><span class="sm:ml-[20px] pl-11">1.30 P.m - 4.40 P.m</span
-							><br /><span class="font-[600]"
-								><i class="fa-solid fa-stethoscope fa-beat-fade px-3 text-3xl"
-								></i>{t("timetable__date25_sub2")}</span
-							><br /><span class="sm:ml-[20px] pl-11">1.30 P.m - 3.30 P.m</span>
-							<span class="article-number"></span>
-						</p>
-					</div>
-				</a>
-			</div>
-
-			<div class="ag-courses_item">
-				<a class="ag-courses-item_link">
-					<div class="ag-courses-item_bg"></div>
-					<div class="ag-courses-item_date-box">
-						<span class="ag-courses-item_date"> 26.11.2023</span>
-					</div>
-					<div class="ag-courses-item_title">
-						<p class="text-[16px] lg:text-[22px] !leading-snug">
-							<span class="font-[600]"
-								><i
-									class="fa-solid fa-square-root-variable fa-beat-fade px-3 text-3xl"
-								></i>
-								{t("timetable__date26_sub1")}</span
-							>
-							<br /><span class="sm:ml-[20px] pl-11">1.30 P.m - 4.40 P.m</span
-							><br /><span class="font-[600]"
-								><i class="fa-solid fa-stethoscope fa-beat-fade px-3 text-3xl"
-								></i>{t("timetable__date26_sub2")}</span
-							><br /><span class="sm:ml-[20px] pl-11"></span>1.30 P.m - 4.40 P.m
-							<span class="article-number"></span>
-						</p>
-					</div>
-				</a>
-			</div>
-
-			<div class="ag-courses_item">
-				<a class="ag-courses-item_link">
-					<div class="ag-courses-item_bg"></div>
-					<div class="ag-courses-item_date-box">
-						<span class="ag-courses-item_date"> 30.11.2023</span>
-					</div>
-					<div class="ag-courses-item_title">
-						<p class="text-[16px] lg:text-[22px] !leading-snug">
-							<span class="font-[600]"
-								><i
-									class="fa-sharp fa-solid fa-circle-radiation fa-beat-fade text-3xl px-3"
-								></i>
-								{t("timetable__date30_sub1")}</span
-							><br /><span class="sm:ml-[20px] pl-11"></span>2.30 P.m - 4.30 P.m<span
-								class="article-number"></span>
-						</p>
-					</div>
-				</a>
-			</div>
-
-			<div class="ag-courses_item">
-				<a class="ag-courses-item_link">
-					<div class="ag-courses-item_bg"></div>
-					<div class="ag-courses-item_date-box">
-						<span class="ag-courses-item_date"> 03.12.2023</span>
-					</div>
-					<div class="ag-courses-item_title">
-						<p class="text-[16px] lg:text-[22px] !leading-snug">
-							<span class="font-[600]"
-								><i
-									class="fa-sharp fa-solid fa-circle-radiation fa-beat-fade text-3xl px-3"
-								></i>{t("timetable__date03_sub1")}</span
-							><br /><span class="sm:ml-[20px] pl-11"></span>1.30 P.m - 4.40 P.m
-							<span class="article-number"></span>
-						</p>
-					</div>
-				</a>
-			</div>
-
-			<div class="ag-courses_item">
-				<a class="ag-courses-item_link">
-					<div class="ag-courses-item_bg"></div>
-					<div class="ag-courses-item_date-box">
-						<span class="ag-courses-item_date"> 09.12.2023</span>
-					</div>
-					<div class="ag-courses-item_title">
-						<p class="text-[16px] lg:text-[22px] !leading-snug">
-							<span class="font-[600]"
-								><i
-									class="fa-sharp fa-solid fa-flask fa-beat-fade text-3xl px-3"
-								></i>{t("timtable__date09_sub1")}</span
-							><br /><span class="sm:ml-[20px] pl-11"></span>1.30 P.m - 3.30 P.m<br
-							/><span class="font-[600]"
-								><i class="fa-sharp fa-solid fa-code fa-beat-fade text-3xl px-3"
-								></i>{t("timtable__date09_sub2")}</span
-							><br /><span class="sm:ml-[20px] pl-11"></span>1.30 P.m - 3.30 P.m<span
-								class="article-number"></span>
-						</p>
-					</div>
-				</a>
-			</div>
-			<div class="ag-courses_item">
-				<a class="ag-courses-item_link">
-					<div class="ag-courses-item_bg"></div>
-					<div class="ag-courses-item_date-box">
-						<span class="ag-courses-item_date"> 10.12.2023</span>
-					</div>
-					<div class="ag-courses-item_title">
-						<p class="text-[16px] lg:text-[22px] !leading-snug">
-							<span class="font-[600]"
-								><i
-									class="fa-sharp fa-solid fa-flask fa-beat-fade text-3xl px-3"
-								></i>{t("timtable__date10_sub1")}</span
-							><br /><span class="sm:ml-[20px] pl-11"></span>1.30 P.m - 4.40 P.m
-							<br /><span class="font-[600]"
-								><i class="fa-sharp fa-solid fa-code fa-beat-fade text-3xl px-3"
-								></i>{t("timtable__date10_sub2")}</span
-							><br /><span class="sm:ml-[20px] pl-11"></span>1.30 P.m - 4.40 P.m<span
-								class="article-number"></span>
-						</p>
-					</div>
-				</a>
-			</div>
+			<TimetableCard
+				date={new Date("2023-11-25")}
+				subjects={[
+					{
+						name_en: "Combined Mathematics I",
+						name_ta: "Combined Mathematics I",
+						icon: "fa-square-root-variable",
+						time: "1:30 PM - 4:40 PM",
+					},
+					{
+						name_en: "Biology I",
+						name_ta: "Biology I",
+						icon: "fa-stethoscope",
+						time: "1:30 PM - 3:30 PM",
+					},
+				]}
+			/>
+			<TimetableCard
+				date={new Date("2023-11-26")}
+				subjects={[
+					{
+						name_en: "Combined Mathematics II",
+						name_ta: "Combined Mathematics II",
+						icon: "fa-square-root-variable",
+						time: "1:30 PM - 4:40 PM",
+					},
+					{
+						name_en: "Biology II",
+						name_ta: "Biology II",
+						icon: "fa-stethoscope",
+						time: "1:30 PM - 4:40 PM",
+					},
+				]}
+			/>
+			<TimetableCard
+				date={new Date("2023-11-30")}
+				subjects={[
+					{
+						name_en: "Physics I",
+						name_ta: "Physics I",
+						icon: "fa-square-root-variable",
+						time: "2:30 PM - 4:30 PM",
+					},
+				]}
+			/>
+			<TimetableCard
+				date={new Date("2023-12-03")}
+				subjects={[
+					{
+						name_en: "Physics II",
+						name_ta: "Physics II",
+						icon: "fa-square-root-variable",
+						time: "1:30 PM - 4:40 PM",
+					},
+				]}
+			/>
+			<TimetableCard
+				date={new Date("2023-12-09")}
+				subjects={[
+					{
+						name_en: "Chemistry I",
+						name_ta: "Chemistry I",
+						icon: "fa-square-root-variable",
+						time: "1:30 PM - 3:30 PM",
+					},
+					{
+						name_en: "ICT I",
+						name_ta: "ICT I",
+						icon: "fa-stethoscope",
+						time: "1:30 PM - 3:30 PM",
+					},
+				]}
+			/>
+			<TimetableCard
+				date={new Date("2023-12-09")}
+				subjects={[
+					{
+						name_en: "Chemistry II",
+						name_ta: "Chemistry II",
+						icon: "fa-square-root-variable",
+						time: "1:30 PM - 4:40 PM",
+					},
+					{
+						name_en: "ICT II",
+						name_ta: "ICT II",
+						icon: "fa-stethoscope",
+						time: "1:30 PM - 4:40 PM",
+					},
+				]}
+			/>
 		</div>
 	</div>
 </div>
@@ -147,131 +107,5 @@ const t = useTranslations(lang);
 <style>
 	.ag-courses_box {
 		@apply grid pt-5 py-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3;
-	}
-	.ag-courses_item {
-		@apply rounded-lg;
-		-ms-flex-preferred-size: calc(33.33333% - 30px);
-		flex-basis: calc(33.33333% - 30px);
-
-		/* margin: 0 15px 30px; */
-
-		overflow: hidden;
-
-		cursor: pointer;
-	}
-	.ag-courses-item_link {
-		@apply h-full;
-		display: block;
-		padding-left: 30px;
-		padding-top: 15px;
-		overflow: hidden;
-		position: relative;
-		opacity: 1;
-
-		@apply bg-extra-1-600
-		/* background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%); */;
-	}
-	.ag-courses-item_link:hover,
-	.ag-courses-item_link:hover .ag-courses-item_date {
-		text-decoration: none;
-		color: #fff;
-	}
-	.ag-courses-item_link:hover .ag-courses-item_bg {
-		-webkit-transform: scale(10);
-		-ms-transform: scale(10);
-		transform: scale(10);
-	}
-	.ag-courses-item_title {
-		min-height: 87px;
-		margin: 0 0 25px;
-
-		overflow: hidden;
-
-		font-size: 20px;
-		color: #fff;
-
-		z-index: 2;
-		position: relative;
-	}
-	.ag-courses-item_date-box {
-		font-size: 25px;
-		color: #270722;
-
-		z-index: 2;
-		position: relative;
-	}
-	.ag-courses-item_date {
-		color: #270722;
-		font-weight: 600;
-		font-weight: bold;
-
-		-webkit-transition: color 0.5s ease;
-		-o-transition: color 0.5s ease;
-		transition: color 0.5s ease;
-	}
-	.ag-courses-item_bg {
-		height: 180px;
-		width: 180px;
-		background-color: #490665;
-
-		z-index: 1;
-		position: absolute;
-		top: -95px;
-		right: -95px;
-
-		border-radius: 60%;
-
-		-webkit-transition: all 0.5s ease;
-		-o-transition: all 0.5s ease;
-		transition: all 0.5s ease;
-	}
-	.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-		background-color: #490665;
-	}
-	.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-		background-color: #490665;
-	}
-	.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-		background-color: #490665;
-	}
-	.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-		background-color: #490665;
-	}
-	.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-		background-color: #490665;
-	}
-
-	@media only screen and (max-width: 979px) {
-		.ag-courses_item {
-			-ms-flex-preferred-size: calc(50% - 30px);
-			flex-basis: calc(50% - 30px);
-		}
-		.ag-courses-item_title {
-			font-size: 24px;
-		}
-	}
-
-	@media only screen and (max-width: 767px) {
-		.ag-format-container {
-			width: 96%;
-		}
-	}
-	@media only screen and (max-width: 639px) {
-		.ag-courses_item {
-			-ms-flex-preferred-size: 100%;
-			flex-basis: 100%;
-		}
-		.ag-courses-item_title {
-			min-height: 72px;
-			line-height: 1;
-
-			font-size: 28px;
-		}
-		.ag-courses-item_link {
-			padding: 22px 40px;
-		}
-		.ag-courses-item_date-box {
-			font-size: 20px;
-		}
 	}
 </style>
