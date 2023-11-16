@@ -163,14 +163,20 @@
 		{
 			"name_en": "Gampaha",
 			"name_ta": "கம்பஹா",
-			"coordinator": "Abdullah Sir",
-			"contact_number": "767034384",
 			"centers": [
 				{
+					"coordinator": {
+						"name_en": "Abdullah sir",
+						"contact_number": "0767034384"
+					},
 					"name_en": "Al Azhar Central College, Thihariya (IT Only)",
 					"name_ta": "அல் அஸார் மத்திய கல்லூரி, திஹாரியா (IT மட்டும்)"
 				},
 				{
+					"coordinator": {
+						"name_en": "M. M. Sabir",
+						"contact_number": "0773173005, 0718043190"
+					},
 					"name_en": "Al-Muhsin Science College, Malwana",
 					"name_ta": "அல்-முஹ்ஸின் அறிவியல் கல்லூரி, மல்வானா"
 				}
@@ -179,8 +185,12 @@
 		{
 			"name_en": "Galle",
 			"name_ta": "காலி",
-			"coordinator": "Ayyash",
-			"contact_number": "760727374",
+			"coordinators": [
+				{
+					"name_en": "Ayyash",
+					"contact_number": "0760727374"
+				}
+			],
 			"centers": [
 				{
 					"name_en": "Malharus Sulhiya Central College",
@@ -191,8 +201,20 @@
 		{
 			"name_en": "Jaffna",
 			"name_ta": "யாழ்",
-			"coordinator": "Navaneethan",
-			"contact_number": "769184454",
+			"coordinators": [
+				{
+					"name_en": "Navaneethan",
+					"contact_number": "0769184454"
+				},
+				{
+					"name_en": "Umakanthan",
+					"contact_number": "0770617191"
+				},
+				{
+					"name_en": "Harismenan",
+					"contact_number": "0771181193"
+				}
+			],
 			"centers": [
 				{
 					"name_en": "Jaffna Hindu College",
@@ -227,8 +249,12 @@
 		{
 			"name_en": "Kalutura",
 			"name_ta": "களுத்துறை",
-			"coordinator": "Safan Sir",
-			"contact_number": "773456016",
+			"coordinators": [
+				{
+					"name_en": "Safan Sir",
+					"contact_number": "0773456016"
+				}
+			],
 			"centers": [
 				{
 					"name_en": "Dharga Town Science Project (DSP)",
@@ -239,15 +265,21 @@
 		{
 			"name_en": "Kandy",
 			"name_ta": "கண்டி",
-			"coordinator": "Afzal",
-			"contact_number": "766569629",
 			"centers": [
 				{
-					"name_en": "Akurana Balika MMV",
+					"coordinator": {
+						"name_en": "Afzal",
+						"contact_number": "0766569629"
+					},
+					"name_en": "K/Akurana Balika MMV",
 					"name_ta": "அக்குரானா பாலிகா மகா வித்யாலயம்"
 				},
 				{
-					"name_en": "Kathiresan Central College",
+					"coordinator": {
+						"name_en": "Aqeel",
+						"contact_number": "0763528658"
+					},
+					"name_en": "K/Kathiresan Central College",
 					"name_ta": "கதிரேசன் மத்திய கல்லூரி"
 				}
 			]
@@ -255,14 +287,20 @@
 		{
 			"name_en": "Kegalle",
 			"name_ta": "கேகால",
-			"coordinator": "Rizwan Sir",
-			"contact_number": "764807648",
 			"centers": [
 				{
+					"coordinator": {
+						"name_en": "Rizwan sir",
+						"contact_number": "0764807648"
+					},
 					"name_en": "Ceylon Ladies' Campus, Warakapola",
 					"name_ta": "சிலான் லேடிஸ் கேம்பஸ், வாரகபொல"
 				},
 				{
+					"coordinator": {
+						"name_en": "Afshan",
+						"contact_number": "0775461645"
+					},
 					"name_en": "Zahira College, Mawanella",
 					"name_ta": "ஸாஹிரா கல்லூரி, மாவனெல்லா"
 				}
@@ -271,8 +309,12 @@
 		{
 			"name_en": "Kilinochchi",
 			"name_ta": "கிளிநொச்சி",
-			"coordinator": "Tenojan",
-			"contact_number": "762043709",
+			"coordinators": [
+				{
+					"name_en": "Tenojan",
+					"contact_number": "762043709"
+				}
+			],
 			"centers": [
 				{
 					"name_en": "Kilinochchi Madya Maha Vidyalayam",
@@ -283,18 +325,28 @@
 		{
 			"name_en": "Kurunegala",
 			"name_ta": "குருநாகல",
-			"coordinator": "Zacky Sir",
-			"contact_number": "777123113",
 			"centers": [
 				{
+					"coordinator": {
+						"name_en": "Zacky sir",
+						"contact_number": "0777123113"
+					},
 					"name_en": "Annoor National School",
 					"name_ta": "அன்நூர் தேசிய பள்ளி"
 				},
 				{
+					"coordinator": {
+						"name_en": "Abdullah",
+						"contact_number": "0726463103"
+					},
 					"name_en": "Madeena National School, Giriulla",
 					"name_ta": "மதீனா தேசிய பள்ளி, கிரில்லா"
 				},
 				{
+					"coordinator": {
+						"name_en": "Rifas Sir",
+						"contact_number": "0771735517, 0740166199"
+					},
 					"name_en": "Kekunagolla Central College (National School) (ASDP)",
 					"name_ta": "கேகுனகொல்ல மத்திய கல்லூரி (தேசிய பள்ளி) (ASDP)"
 				}
@@ -303,8 +355,12 @@
 		{
 			"name_en": "Mannar",
 			"name_ta": "மன்னார்",
-			"coordinator": "Dinesious",
-			"contact_number": "779177135",
+			"coordinators": [
+				{
+					"name_en": "Dinesious",
+					"contact_number": "0779177135"
+				}
+			],
 			"centers": [
 				{
 					"name_en": "St. Xavier's Boys' National College",
@@ -319,8 +375,12 @@
 		{
 			"name_en": "Matale",
 			"name_ta": "மாத்தலே",
-			"coordinator": "Madhuragavan",
-			"contact_number": "760033102",
+			"coordinators": [
+				{
+					"name_en": "Madhuragavan",
+					"contact_number": "0760033102"
+				}
+			],
 			"centers": [
 				{
 					"name_en": "Pakkiyam National School",
@@ -331,14 +391,20 @@
 		{
 			"name_en": "Matara",
 			"name_ta": "மாத்தரை",
-			"coordinator": "Sijahudeen Sir",
-			"contact_number": "764328807",
 			"centers": [
 				{
+					"coordinator": {
+						"name_en": "Sijahudeen sir",
+						"contact_number": "0764328807, 0716040807"
+					},
 					"name_en": "DFEC Science Project, Dickwella",
 					"name_ta": "டிஎஃபெக் அறிவியல் சிந்தனை, டிக்வெல்ல"
 				},
 				{
+					"coordinator": {
+						"name_en": "Faizer Sir",
+						"contact_number": "0779931493, 0778931493"
+					},
 					"name_en": "Arafa National School, Weligama",
 					"name_ta": "அரஃபா தேசிய பள்ளி, வெலிகாம"
 				}
@@ -347,8 +413,12 @@
 		{
 			"name_en": "Mullaiteevu",
 			"name_ta": "முல்லைத்தீவு",
-			"coordinator": "Subavarsana",
-			"contact_number": "771521671",
+			"coordinators": [
+				{
+					"name_en": "Subavarsana",
+					"contact_number": "0771521671"
+				}
+			],
 			"centers": [
 				{
 					"name_en": "Mulliyawalai Vidyananda College",
@@ -379,8 +449,12 @@
 		{
 			"name_en": "Nuwara-Eliya",
 			"name_ta": "நுவரெலியா",
-			"coordinator": "Yuwarajan",
-			"contact_number": "717942233",
+			"coordinators": [
+				{
+					"name_en": "Yuwarajan",
+					"contact_number": "0717942233"
+				}
+			],
 			"centers": [
 				{
 					"name_en": "Highlands College, Hatton",
@@ -399,8 +473,12 @@
 		{
 			"name_en": "Puttalam",
 			"name_ta": "புத்தளம்",
-			"coordinator": "Inas",
-			"contact_number": "766019966",
+			"coordinators": [
+				{
+					"name_en": "Inas",
+					"contact_number": "0766019966"
+				}
+			],
 			"centers": [
 				{
 					"name_en": "President's Science College",
@@ -419,8 +497,12 @@
 		{
 			"name_en": "Trincomalee",
 			"name_ta": "திருகோணமலை",
-			"coordinator": "Theshikan",
-			"contact_number": "754557664",
+			"coordinators": [
+				{
+					"name_en": "Theshikan",
+					"contact_number": "0754557664"
+				}
+			],
 			"centers": [
 				{
 					"name_en": "R.K.M Sri Koneswara Hindu College",
@@ -443,8 +525,12 @@
 		{
 			"name_en": "Vavuniya",
 			"name_ta": "வவுனியா",
-			"coordinator": "Abithan",
-			"contact_number": "767703234",
+			"coordinators": [
+				{
+					"name_en": "Abithan",
+					"contact_number": "0767703234"
+				}
+			],
 			"centers": [
 				{
 					"name_en": "Rambaikkulam Girls Maha Vidyalayam",
