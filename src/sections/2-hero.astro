@@ -16,9 +16,9 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		>
 		<!-- Welcome To<br /><span class="inline-block w-max">Mora&nbsp;Exams</span> -->
 	</h1>
-	<button class="btn w-[140px] sm:w-[15vw] text-[16px] sm:text-[24px]"
-		>Apply Now<i
-			class="fa-solid fa-arrow-right translate-x-[10px] transition-transform"
+	<button class="btn text-[16px] sm:text-[24px]"
+		>{t("hero_button")}<i
+			class="fa-solid fa-arrow-right translate-x-[10px] transition-transform pr-2"
 		></i></button
 	>
 	<!-- <p class="text-xl sm:text-2xl">Please Select Your language</p>
@@ -40,7 +40,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 	.btn {
 		color: #fff;
 		background: linear-gradient(135deg, #852d91, #312a6c);
-
+		width:fit-content;
 		padding: 12px 20px;
 		transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 
