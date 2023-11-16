@@ -15,14 +15,17 @@ const displayName = t(`feedback_${name}_name`);
 
 <div class="card">
 	<img src={`/achievers/${name}.jpg`} alt={displayName} />
-	<h3 class="">
-		<span class="capitalize">
+	<div class="info">
+		<h3>
 			{displayName}
-		</span>
-		<br />
-		{state}<br />
-		{batch}
-	</h3>
+			<!-- <br />
+			{state}<br />
+			{batch} -->
+		</h3>
+
+		<span class="block">{state}</span>
+		<span>{batch}</span>
+	</div>
 	<p>
 		{body}
 	</p>
@@ -40,7 +43,7 @@ const displayName = t(`feedback_${name}_name`);
 		@apply bg-fairy-tale-500 opacity-100;
 	}
 	img,
-	h3,
+	.info,
 	p {
 		@apply transition-transform;
 		transform-origin: center;
@@ -54,10 +57,13 @@ const displayName = t(`feedback_${name}_name`);
 		transform: translateX(calc(-0.33 * var(--width))) scale(0.8);
 	}
 	h3 {
-		@apply m-0 text-center text-xl h-fit;
+		@apply m-0 text-center text-2xl h-fit;
+	}
+	.info {
+		@apply text-center;
 		transform: translateY(calc(0.05 * var(--width)));
 	}
-	.card:hover h3 {
+	.card:hover .info {
 		transform: translateX(calc(0.1 * var(--width)))
 			translateY(calc(-0.34 * var(--height)));
 	}
@@ -66,7 +72,7 @@ const displayName = t(`feedback_${name}_name`);
 		transform: translateY(200px);
 	}
 	.card:hover p {
-		transform: translateY(calc(-0.28 * var(--height)));
+		transform: translateY(calc(-0.25 * var(--height)));
 		@apply h-full;
 	}
 </style>

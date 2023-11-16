@@ -135,6 +135,7 @@ export const defaultLang = "en";
  * @prop {string} achivers_ranking_6
  * @prop {string} achivers_ranking_7
  * @prop {string} achivers_ranking_8
+ * @prop {string} name__tla
  */
 
 /**
@@ -217,7 +218,8 @@ export const ui = Object.freeze({
 			"Due to the COVID-19 pandamic, we hadn't faced any Model exams for nearly five months. In that respect, Mora exams helped me develop the ability to approach the questions and answer them properly.",
 		feedback_suriya:
 			"Mora exams are very similar to our A/L final examination. It helps students find their strengths and weaknesses beforehand.",
-		feedback_snekan: "The MORA Exams helped me a lot in my preparation for the A/L Examination. The exam results pointed out my strengths and helped me improve and boost my confidence for the final exam.",
+		feedback_snekan:
+			"The MORA Exams helped me a lot in my preparation for the A/L Examination. The exam results pointed out my strengths and helped me improve and boost my confidence for the final exam.",
 		feedback_iroshan_name: "Iroshan",
 		feedback_darukeesan_name: "Darukeesan",
 		feedback_abarna_name: "Abarna",
@@ -275,6 +277,7 @@ export const ui = Object.freeze({
 		achivers_ranking_6: "Island First(JAFFNA)",
 		achivers_ranking_7: "District First(JAFFNA)",
 		achivers_ranking_8: "District First(JAFFNA)",
+		name__tla: "Tamil Literary Association",
 	},
 	ta: {
 		index__title: "மொறா பரீட்சைகள்",
@@ -353,7 +356,7 @@ export const ui = Object.freeze({
 		feedback_suriya:
 			"மொறா பரீட்சைகள் எமது A/L இறுதிப் பரீட்சைக்கு மிகவும் ஒத்தவை. மாணவர்கள் தங்கள் பலம் மற்றும் பலவீனங்களை முன்கூட்டியே கண்டறிய உதவுகிறது.",
 		feedback_snekan:
-		 "எனது உயர்தரப் பரீட்சைத் தயார்நிலைப்படுத்தலுக்கு மொறா பரீட்சை பெரிதும் உதவியது.பரீட்சை பெறுபேறுகள் எனது பலங்களை சுட்டிக்காட்டியதோடு , முன்னேற்றத்தை ஏற்படுத்தி, இறுதி சோதனைக்கான எனது நம்பிக்கையை அதிகரிக்க உதவியது.",
+			"எனது உயர்தரப் பரீட்சைத் தயார்நிலைப்படுத்தலுக்கு மொறா பரீட்சை பெரிதும் உதவியது.பரீட்சை பெறுபேறுகள் எனது பலங்களை சுட்டிக்காட்டியதோடு , முன்னேற்றத்தை ஏற்படுத்தி, இறுதி சோதனைக்கான எனது நம்பிக்கையை அதிகரிக்க உதவியது.",
 		feedback_jathusan:
 			"ஒரு தேர்வின் மிக முக்கியமான அம்சமான எனது நேர முகாமைத்துவத்தை மேம்படுத்த மொறா தேர்வு ஒரு வாய்ப்பை வழங்கியது. இந்த தேர்வு இறுதித் தேர்வைப் போன்ற ஒரு சூழலை உருவாக்குகிறது. இது நமது மன சகிப்புத்தன்மையை வளர்க்க உதவுகிறது.",
 		feedback_heading: "எமது பரீட்சை பற்றி சாதனையாளர்களின் கருத்துக்கள்",
@@ -413,5 +416,6 @@ export const ui = Object.freeze({
 		achivers_ranking_6: "இலங்கையில் முதலிடம்",
 		achivers_ranking_7: "யாழ் மாவட்டத்தில் முதலிடம்",
 		achivers_ranking_8: "யாழ் மாவட்டத்தில் முதலிடம்",
+		name__tla: "தமிழ் இலக்கியக் கழகம்",
 	},
 });
