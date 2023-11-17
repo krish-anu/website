@@ -5,7 +5,7 @@ import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
-<section class="mx-auto">
+<!-- <section class="mx-auto">
 	<h2 class="mt-10 mb-8 text-center">{t("pathway__title")}</h2>
 
 	<div
@@ -33,25 +33,9 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 			description={t("pathway__card4_para")}
 		/>
 	</div>
-</section>
-
-<style>
-	/* * {
-		margin: 0;
-		padding: 0;
-	} */
-
-	/* h1 { */
-	/* font-size: 4rem; */
-	/* font-family: "Montserrat"; */
-	/* font-weight: bold; */
-	/* color: #444; */
-	/* text-align: center; */
-	/* margin: 2rem 0; */
-	/* } */
-</style>
+</section> -->
 <div>
-	<h2 class="head1 mt-10 mb-8 text-center">{t("pathway__title")}</h2>
+	<h2 class="head1 text-center">{t("pathway__title")}</h2>
 	<section id="cd-timeline" class="cd-container">
 		<div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-movie"></div>
@@ -119,13 +103,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 <style>
 	.head1 {
 		color: #673ab7;
-		width: fit-content;
-		align-content: center;
 		font-size: 40px;
-
-		text-align: center;
-		align-items: center;
-		padding-left: 350px;
 	}
 	.cd-container {
 		width: 90%;
@@ -147,7 +125,7 @@ Main components
 
 -------------------------------- */
 
-#cd-timeline {
+	#cd-timeline {
 		position: relative;
 		padding: 2em 0;
 		margin-top: 2em;
@@ -161,16 +139,6 @@ Main components
 		height: 100%;
 		width: 4px;
 		background: #7e57c2;
-	}
-	@media only screen and (min-width: 1170px) {
-		#cd-timeline {
-			margin-top: 3em;
-			margin-bottom: 3em;
-		}
-		#cd-timeline::before {
-			left: 50%;
-			margin-left: -2px;
-		}
 	}
 
 	.cd-timeline-block {
@@ -188,17 +156,6 @@ Main components
 	.cd-timeline-block:last-child {
 		margin-bottom: 0;
 	}
-	@media only screen and (min-width: 1170px) {
-		.cd-timeline-block {
-			margin: 4em 0;
-		}
-		.cd-timeline-block:first-child {
-			margin-top: 0;
-		}
-		.cd-timeline-block:last-child {
-			margin-bottom: 0;
-		}
-	}
 
 	.cd-timeline-img {
 		position: absolute;
@@ -214,18 +171,6 @@ Main components
 	}
 	.cd-timeline-img {
 		background: #673ab7;
-	}
-	@media only screen and (min-width: 1170px) {
-		.cd-timeline-img {
-			width: 30px;
-			height: 30px;
-			left: 50%;
-			margin-left: -15px;
-			margin-top: 15px;
-			/* Force Hardware Acceleration in WebKit */
-			-webkit-transform: translateZ(0);
-			-webkit-backface-visibility: hidden;
-		}
 	}
 
 	.cd-timeline-content {
@@ -327,7 +272,34 @@ Main components
 			font-size: 0.875rem;
 		}
 	}
-	@media only screen and (min-width: 1170px) {
+	@media only screen and (min-width: 1024px) {
+		#cd-timeline {
+			margin-top: 3em;
+			margin-bottom: 3em;
+		}
+		#cd-timeline::before {
+			left: 50%;
+			margin-left: -2px;
+		}
+		.cd-timeline-block {
+			margin: 4em 0;
+		}
+		.cd-timeline-block:first-child {
+			margin-top: 0;
+		}
+		.cd-timeline-block:last-child {
+			margin-bottom: 0;
+		}
+		.cd-timeline-img {
+			width: 30px;
+			height: 30px;
+			left: 50%;
+			margin-left: -15px;
+			margin-top: 15px;
+			/* Force Hardware Acceleration in WebKit */
+			-webkit-transform: translateZ(0);
+			-webkit-backface-visibility: hidden;
+		}
 		.cd-timeline-content {
 			color: white;
 			margin-left: 0;
