@@ -18,7 +18,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 	</h1>
 	<a
 		href="https://forms.gle/1PQoRy6FTfhPd8Qr9"
-		class="no-underline text-[16px] sm:text-[24px]"
+		class="no-underline text-[16px] sm:text-[24px] mt-8 w-fit"
 	>
 		<button class="btn">
 			<span>
@@ -41,6 +41,41 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		>
 	</div> -->
 </section>
+
+<script>
+	const logoTitles = document.querySelectorAll(".logo-title");
+	const observer = new IntersectionObserver(
+		(entries) => {
+			const entry = entries[0];
+
+			for (const item of logoTitles) {
+				if (!(item instanceof HTMLAnchorElement)) {
+					continue;
+				}
+
+				if (entry.isIntersecting) {
+					// visible
+					item.style.color = "transparent";
+				} else {
+					item.style.color = "inherit";
+				}
+			}
+		},
+		{
+			rootMargin: "-30px 0px 0px 0px",
+			threshold: 1,
+		},
+	);
+
+	const h1Elements = document.querySelectorAll("h1");
+	if (h1Elements.length != 1) {
+		throw new Error("An HTML page must contain one and only h1 element.");
+	}
+	setTimeout(() => {
+		observer.observe(h1Elements.item(0));
+	}, 3000);
+</script>
+
 <style>
 	button:hover i {
 		@apply translate-x-[16px];
@@ -55,8 +90,6 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		outline-width: 2px;
 		border-radius: 0.5rem;
 		cursor: pointer;
-		margin-bottom: 50px;
-		margin-top: 30px;
 	}
 	.btn:hover {
 		color: #cfcece;
