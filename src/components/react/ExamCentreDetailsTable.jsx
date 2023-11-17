@@ -45,6 +45,7 @@ export function ExamCentreDetailsTable(props) {
 				<ul className="list-none m-0 p-0 grid gap-y-2 lg:gap-y-4 gap-x-2 grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]">
 					{districtInfo.centers.map((centre, index) => (
 						<ExamCentreDetails
+							key={centre.name_en}
 							centre={centre}
 							languagePreference={languagePreference}
 						/>
