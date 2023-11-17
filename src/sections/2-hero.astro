@@ -16,11 +16,19 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		>
 		<!-- Welcome To<br /><span class="inline-block w-max">Mora&nbsp;Exams</span> -->
 	</h1>
-	<button class="btn text-[16px] sm:text-[24px]"
-		>{t("hero_button")}<i
-			class="fa-solid fa-arrow-right translate-x-[10px] transition-transform pr-2"
-		></i></button
+	<a
+		href="https://forms.gle/1PQoRy6FTfhPd8Qr9"
+		class="no-underline text-[16px] sm:text-[24px]"
 	>
+		<button class="btn">
+			<span>
+				{t("hero_button")}
+			</span>
+			<i
+				class="fa-solid fa-arrow-right translate-x-[10px] transition-transform pr-2"
+			></i>
+		</button>
+	</a>
 	<!-- <p class="text-xl sm:text-2xl">Please Select Your language</p>
 	<div>
 		<button
@@ -35,15 +43,12 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 </section>
 <style>
 	button:hover i {
-		@apply translate-x-[20px];
+		@apply translate-x-[16px];
 	}
 	.btn {
-		color: #fff;
+		@apply text-white w-fit px-5 py-3 text-[1em];
 		background: linear-gradient(135deg, #852d91, #312a6c);
-		width:fit-content;
-		padding: 12px 20px;
 		transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-
 		font-weight: bold;
 		border: 0;
 		outline-color: hsl(243, 31%, 60%);
@@ -106,5 +111,8 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 			opacity: 1;
 			transform: translateY(0%);
 		}
+	}
+	.btn > * {
+		@apply inline-block align-middle h-fit;
 	}
 </style>
