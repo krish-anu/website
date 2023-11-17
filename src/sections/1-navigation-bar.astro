@@ -76,6 +76,27 @@ const t = useTranslations(lang);
 	cloned.id = "cloned";
 	document.body.firstChild.appendChild(cloned);
 
+	/**
+	 * @param {HTMLElementEventMap["click"]} event
+	 * @returns {any}
+	 */
+	function navClickListener(event) {
+		const targetElement = event.target;
+		if (!(targetElement instanceof HTMLAnchorElement)) {
+			return;
+		}
+		const items = document.querySelectorAll("#nav-bar-toggle");
+		for (const item of items) {
+			if (!(item instanceof HTMLInputElement)) {
+				continue;
+			}
+			item.checked = false;
+		}
+	}
+
+	nav.addEventListener("click", navClickListener);
+	cloned.addEventListener("click", navClickListener);
+
 	let isNavFixed = false;
 	window.addEventListener("scroll", (event) => {
 		const navPositionY = nav.getBoundingClientRect().y;
@@ -96,7 +117,6 @@ const t = useTranslations(lang);
 		let isNavOpened = false;
 
 		for (let item of navToggles) {
-			console.log(item);
 			if (!(item instanceof HTMLInputElement)) {
 				continue;
 			}
