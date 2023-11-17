@@ -7,10 +7,11 @@ import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react()],
-  output: "hybrid",
-  redirects: {
-    "/": `/${defaultLang}/`
-  },
-  adapter: netlify()
+	integrations: [tailwind(), react()],
+	output: "hybrid",
+	redirects: {
+		"/": `/${defaultLang}/`,
+	},
+	adapter: netlify(),
+	site: "https://astounding-brigadeiros-506019.netlify.app",
 });

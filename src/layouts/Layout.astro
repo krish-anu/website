@@ -8,6 +8,11 @@ const { pageTitle } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
+console.log("import.meta.url", import.meta.url);
+console.log("import.meta.env.PROD", import.meta.env.PROD);
+console.log("base url", import.meta.env.BASE_URL);
+console.log("site", import.meta.env.SITE);
+
 const ogImageUrl = new URL(Astro.url);
 ogImageUrl.pathname = "/og-image.jpg";
 ---
