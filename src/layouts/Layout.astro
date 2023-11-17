@@ -7,6 +7,9 @@ interface Props {
 const { pageTitle } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const ogImageUrl = new URL(Astro.url);
+ogImageUrl.pathname = "/og-image.jpg";
 ---
 
 <!doctype html>
@@ -43,8 +46,8 @@ const t = useTranslations(lang);
 			content="Pilot Exam, mora exam, A/L exam, exam mora, mora exam 2021, moratuwa university exam, moratuwa exam, moraetamils, moraetamils exam, moraexam, moraetamils, mora etamils "
 		/>
 
-		<meta property="og:url" content="https://moraetamils.com/" />
-		<meta property="og:image" content="/og-image.jpg" />
+		<meta property="og:url" content={Astro.url.toString()} />
+		<meta property="og:image" content={ogImageUrl.toString()} />
 	</head>
 	<body>
 		<slot />
