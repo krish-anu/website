@@ -1,0 +1,52 @@
+---
+import PathwayCard from "../components/PathwayCard.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const t = useTranslations(getLangFromUrl(Astro.url));
+---
+
+<section class="mx-auto">
+	<h2 class="mt-10 mb-8 text-center">{t("pathway__title")}</h2>
+
+	<div
+		class="cols grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-2"
+	>
+		<PathwayCard
+			title={t("pathway__card1_title")}
+			year="2007"
+			description={t("pathway__card1_para")}
+		/>
+		<PathwayCard
+			title={t("pathway__card2_title")}
+			year="2010"
+			description={t("pathway__card2_para")}
+		/>
+		<PathwayCard
+			title={t("pathway__card3_title")}
+			year="2016"
+			description={t("pathway__card3_para")}
+		/>
+
+		<PathwayCard
+			title={t("pathway__card4_title")}
+			year="2023"
+			description={t("pathway__card4_para")}
+		/>
+	</div>
+</section>
+
+<style>
+	/* * {
+		margin: 0;
+		padding: 0;
+	} */
+
+	/* h1 { */
+	/* font-size: 4rem; */
+	/* font-family: "Montserrat"; */
+	/* font-weight: bold; */
+	/* color: #444; */
+	/* text-align: center; */
+	/* margin: 2rem 0; */
+	/* } */
+</style>
