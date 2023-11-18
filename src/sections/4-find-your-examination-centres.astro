@@ -87,16 +87,16 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 			}),
 		);
 
-		if (shouldScroll) {
-			container.scrollIntoView();
-		}
+		// if (shouldScroll) {
+		// 	container.scrollIntoView();
+		// }
 	}
 
 	const slMap = document.querySelector("#SL-map");
 	if (!(slMap instanceof SVGElement)) {
 		console.error("slMap is not an SVGElement");
 	} else {
-		updateDistrict("Ampara", false);
+		updateDistrict("Jaffna", false);
 		slMap.addEventListener("click", (event) => {
 			const targetElement = event.target;
 			console.log(targetElement);
