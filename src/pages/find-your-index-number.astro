@@ -1,0 +1,31 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../sections/16-footer.astro";
+
+import NavigationBar from "../sections/1-navigation-bar.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const t = useTranslations(getLangFromUrl(Astro.url));
+---
+
+<Layout pageTitle={t("index__title")}>
+	<div class="bg-purple-800">
+		<NavigationBar />
+	</div>
+	<h3 class="text-3xl ml-[43%] mt-[30px]">Find your Index Number</h3>
+	<div class="bg-[#A19E9D] items-center px-32 pb-60 mx-40 rounded-xl">
+		<p class="text-2xl text-center ml-32 pt-20">
+			Enter your NIC Number to find your Index Number.
+		</p>
+		<div class="items-center">
+			<input
+				type="number"
+				class="h-12 rounded-lg text-xl"
+				placeholder="Enter the NIC Number"
+			/>
+			<button class="h-12 rounded-lg text-xl w-[100px]">Find</button>
+		</div>
+	</div>
+	<Footer />
+</Layout>
