@@ -40,7 +40,7 @@ export const getStaticPaths = (() => {
 
 <Layout pageTitle={t("index__title")}>
 	<div
-		class="grid grid-cols-1 px-0 h-[72vh] sm:h-[100vh] grid-rows-[auto_1fr] sm:grid-rows-[auto_auto_1fr] bg-[url('/bg3.jpg')] bg-cover"
+		class="first-fold grid grid-cols-1 px-0 h-[72vh] sm:h-[100vh] grid-rows-[auto_1fr] sm:grid-rows-[auto_auto_1fr] bg-cover"
 	>
 		<NavigationBar />
 		<Hero />
@@ -74,5 +74,8 @@ export const getStaticPaths = (() => {
 	}
 	section {
 		@apply scroll-mt-20;
+	}
+	.first-fold {
+		background: url("/bg4.jpg") center / cover no-repeat fixed;
 	}
 </style>
