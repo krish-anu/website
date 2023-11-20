@@ -260,7 +260,7 @@ export const ui = Object.freeze({
 		what_is_mora_pilot_exam__li3:
 			"We too release island ranks based on their z-scores.",
 		what_is_mora_pilot_exam__p3:
-			"It vividly canvases the standards of the examinations and their potential among the students so that the students can adjust themselves to become more and more fit for the final contest (G.C.E.A./L), which makes their future more efficacious.",
+			"It vividly canvases the standards of the examinations and their potential among the students so that the students can adjust themselves to become more and more fit for the G.C.E. (A/L) examination, which makes their future more efficacious.",
 		all_about_us_section_heading: "What is all about us?",
 		all_about_us_section_1:
 			"We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
