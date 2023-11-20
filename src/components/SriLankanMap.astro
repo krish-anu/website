@@ -147,14 +147,18 @@
 
 <style>
 	#SL-map {
-		@apply fill-slate-500 w-fit max-w-[300px] m-auto min-w-[250px];
+		@apply fill-extra-2-300 w-fit max-w-[300px] m-auto min-w-[250px];
 		grid-area: map;
 	}
 	.exam-center {
 		@apply fill-extra-2-600 stroke-ultra-violet-300 cursor-pointer;
+		stroke-width: 2;
 		transition-property: fill, stroke;
 		transition-duration: 200ms;
 		transition-timing-function: ease;
+	}
+	.exam-center:hover {
+		@apply stroke-ultra-violet-400 stroke-2	fill-extra-2-700;
 	}
 	.exam-center.selected {
 		@apply stroke-extra-1-700 stroke-2;
