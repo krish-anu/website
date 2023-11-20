@@ -13,10 +13,12 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 	<div class="bg-purple-800">
 		<NavigationBar />
 	</div>
-	<h3 class="text-base sm:text-2xl md:text-3xl flex flex-col text-center pt-5">
+	<!-- <h3 class="text-base sm:text-2xl md:text-3xl flex flex-col text-center pt-5">
 		Find your Index Number
 	</h3>
-	<div class="bg-[#9e57b5] pb-60 mx-[20%] rounded-xl flex flex-col md:pt-32">
+	<div
+		class="bg-[#9e57b5] pb-60 md:mx-[20%] rounded-xl flex flex-col items-center md:pt-20"
+	>
 		<p class="md:text-2xl text-center">
 			Enter your NIC Number to find your Index Number.
 		</p>
@@ -29,8 +31,31 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		<button class="h-8 sm:h-12 rounded-lg text-xl mt-4 md:w-[100px]"
 			>Find</button
 		>
-	</div>
-	<div class="md:mx-32">
-		<Footer />
+	</div> -->
+	<div
+		class="flex flex-col items-center bg-purple-400 rounded-xl mt-[30px] pb-5 sm:my-10 sm:mx-[20%] md:mx-[30%] md:p-10 md:pb-20 md:mt-28 md:mb-20"
+	>
+		<h2 class="text-lg text-center px-3 my-5 sm:text-xl md:text-3xl">
+			Find your Index Number
+		</h2>
+		<p class="text-lg text-center px-3 m-0 sm:text-xl">
+			Enter your NIC Number to find your Index Number.
+		</p>
+		<input
+			type="text"
+			placeholder="Enter the NIC Number"
+			class="my-5 px-4 pt-2 rounded-lg text-sm sm:text-lg"
+		/>
+		<button class="px-2 text-lg rounded-lg sm:text-xl pt-2">Find</button>
 	</div>
 </Layout>
+<div class="p-2 sm:mx-[30px]">
+	<Footer />
+</div>
+<style>
+	@media screen and (max-width: 400px) {
+		input {
+			font-size: 16px;
+		}
+	}
+</style>
