@@ -151,11 +151,14 @@
 		grid-area: map;
 	}
 	.exam-center {
-		@apply fill-extra-2-600 stroke-ultra-violet-300 cursor-pointer;
+		@apply fill-extra-2-600 stroke-ultra-violet-300 !cursor-pointer;
 		stroke-width: 2;
 		transition-property: fill, stroke;
 		transition-duration: 200ms;
 		transition-timing-function: ease;
+	}
+	path[data-title] {
+		@apply cursor-not-allowed;
 	}
 	.exam-center:hover {
 		@apply stroke-ultra-violet-400 stroke-2	fill-extra-2-700;
