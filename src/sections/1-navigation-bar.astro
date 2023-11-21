@@ -6,8 +6,13 @@ import LanguageSelector from "../components/LanguageSelector.astro";
 
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
+interface Props {
+	hideLogo?: boolean;
+}
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const { hideLogo } = Astro.props;
 ---
 
 <header class="hidden sm:flex items-center py-1 bg-transparent text-white">
@@ -32,7 +37,9 @@ const t = useTranslations(lang);
 >
 	<div>
 		<a
-			class="text-3xl font-bold inline-block no-underline relative z-30 order-1 text-transparent transition-colors logo-title"
+			class={"text-3xl font-bold text-inherit inline-block no-underline relative z-30 order-1 transition-colors".concat(
+				hideLogo ? " logo-title" : "",
+			)}
 			href="/"
 		>
 			{t("index__title")}
@@ -164,5 +171,8 @@ const t = useTranslations(lang);
 	}
 	nav#cloned.nav-fixed {
 		@apply flex fixed top-0 bg-ultra-violet-800 right-0 left-0 pointer-events-auto;
+	}
+	.logo-title {
+		@apply text-transparent;
 	}
 </style>

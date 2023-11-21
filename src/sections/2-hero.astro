@@ -43,37 +43,43 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 </section>
 
 <script>
-	const logoTitles = document.querySelectorAll(".logo-title");
-	const observer = new IntersectionObserver(
-		(entries) => {
-			const entry = entries[0];
+	(() => {
+		const logoTitles = document.querySelectorAll(".logo-title");
+		console.log(logoTitles);
+		if (logoTitles.length == 0) {
+			return;
+		}
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const entry = entries[0];
 
-			for (const item of logoTitles) {
-				if (!(item instanceof HTMLAnchorElement)) {
-					continue;
+				for (const item of logoTitles) {
+					if (!(item instanceof HTMLAnchorElement)) {
+						continue;
+					}
+
+					if (entry.isIntersecting) {
+						// visible
+						item.style.color = "transparent";
+					} else {
+						item.style.color = "inherit";
+					}
 				}
+			},
+			{
+				rootMargin: "-30px 0px 0px 0px",
+				threshold: 1,
+			},
+		);
 
-				if (entry.isIntersecting) {
-					// visible
-					item.style.color = "transparent";
-				} else {
-					item.style.color = "inherit";
-				}
-			}
-		},
-		{
-			rootMargin: "-30px 0px 0px 0px",
-			threshold: 1,
-		},
-	);
-
-	const h1Elements = document.querySelectorAll("h1");
-	if (h1Elements.length != 1) {
-		throw new Error("An HTML page must contain one and only h1 element.");
-	}
-	setTimeout(() => {
-		observer.observe(h1Elements.item(0));
-	}, 3000);
+		const h1Elements = document.querySelectorAll("h1");
+		if (h1Elements.length != 1) {
+			throw new Error("An HTML page must contain one and only h1 element.");
+		}
+		setTimeout(() => {
+			observer.observe(h1Elements.item(0));
+		}, 3000);
+	})();
 </script>
 
 <style>
