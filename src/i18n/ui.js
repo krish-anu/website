@@ -166,7 +166,7 @@ export const ui = Object.freeze({
 		// 	"Now It is even easier to find the paper you need. We have advanced filtering options. And we divided all the questions for each year based on the sub-sections of each subject. Now you can practice our past papers section-wise.",
 		looking_for_past_papers__button: "View Pastpapers",
 
-		committee__title: "Mora Exam - 2023 | Committee",
+		committee__title: "Mora Exams 23 | Committee",
 		committee__president_name: "Sarujan",
 
 		committee__president_post: "President",
@@ -256,7 +256,7 @@ export const ui = Object.freeze({
 		statistics__centers: "Centres",
 		statistics__candidates: "Candidates",
 
-		timetable__title: "Timetable",
+		timetable__title: "Timetable 2023",
 		timetable__start: "START",
 		timetable__date25_sub1: "Combined Mathematics-I",
 		timetable__date25_sub2: "Biology-I",
