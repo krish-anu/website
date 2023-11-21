@@ -18,62 +18,30 @@ export const getStaticPaths = (() => {
 	<div class="bg-purple-800">
 		<NavigationBar />
 	</div>
-	<div class="h-[50vw] w-[100%] bg-green-500">
+	<div class="bg-purple-300 flex items-center justify-center">
 		<div
-			class="absolute bg-slate-500 mt-7 flex flex-col items-center rounded-xl sm:ml-[10vw] md:ml-[25vw] md:my-[100px]"
+			class="bg-purple-700 w-[80%] my-8 rounded-xl flex flex-col items-center shadow-purple sm:w-[60%] sm:my-20 md:w-[50%] md:my-40"
 		>
-<<<<<<< HEAD:src/pages/[lang]/find-your-index-number.astro
-	</div> -->
-	<div
-		class="flex flex-col items-center bg-purple-400 rounded-xl mt-[30px] pb-5 sm:my-10 md:p-10 md:pb-20 md:mt-28 md:mb-20 gap-y-2 w-fit mx-auto"
-=======
-			<h2 class="text-lg text-center px-3 my-5 sm:text-xl md:text-3xl">
-				Find your Index Number
-			</h2>
-			<p class="text-lg text-center px-3 m-0 sm:text-xl">
+			<h3 class="text-xl md:text-3xl text-center">Find your Index Number</h3>
+			<p class="text-center text-lg !leading-snug sm:text-xl px-3 md:text-lg">
 				Enter your NIC Number to find your Index Number.
 			</p>
 			<input
 				type="text"
 				placeholder="Enter the NIC Number"
-				class="my-5 px-4 pt-2 rounded-lg text-sm sm:text-lg"
+				class="rounded-lg border-none h-6 px-2 sm:h-8 w-[60%] md:h-10 md:text-2xl"
 			/>
-			<button class="px-2 text-lg rounded-lg sm:text-xl py-1 mb-4">Find</button>
+			<button class="rounded-lg mb-7 mt-3 sm:text-xl sm:px-2">Find</button>
 		</div>
 	</div>
-
-	<!-- <div
-		class="flex flex-col items-center bg-purple-400 rounded-xl mt-[30px] pb-5 sm:my-10 sm:mx-[20%] md:mx-[30%] md:p-10 md:pb-20 md:mt-28 md:mb-20"
->>>>>>> 197d08f (editing index number page):src/pages/find-your-index-number.astro
-	>
-		<h1 class="text-xl text-center px-3 my-5 sm:text-2xl md:text-4xl">
-			Find your Index Number
-		</h1>
-		<p class="text-lg text-center px-3 m-0 sm:text-xl">
-			Enter your NIC Number to find your Index Number.
-		</p>
-		<input
-			type="text"
-			placeholder="Enter the NIC Number"
-			class="px-4 pt-2 rounded-lg text-sm sm:text-lg border-none"
-		/>
-<<<<<<< HEAD:src/pages/[lang]/find-your-index-number.astro
-		<button class="px-2 pt-1 h-fit text-lg rounded-lg border-none sm:text-xl"
-			>Find</button
-		>
-	</div>
-=======
-		<button class="px-2 text-lg rounded-lg sm:text-xl py-2">Find</button>
+	<!-- <div class="w-[100%] bg-purple-300 relative">
+		<div class="bg-purple-800 absolute">
+			<h1 class="">Find your Index Number</h1>
+			<p class="">Enter your NIC Number to find your Index Number.</p>
+			<input type="text" placeholder="Enter the NIC Number" class="" />
+		</div>
 	</div> -->
->>>>>>> 197d08f (editing index number page):src/pages/find-your-index-number.astro
+
+	<div class="p-2 sm:mx-[30px]"><Footer /></div>
 </Layout>
-<div class="p-2 sm:mx-[30px]">
-	<Footer />
-</div>
-<style>
-	@media screen and (max-width: 400px) {
-		input {
-			font-size: 16px;
-		}
-	}
-</style>
+<style></style>
