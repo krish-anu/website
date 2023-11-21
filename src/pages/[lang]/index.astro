@@ -19,22 +19,12 @@ import FeedbackFromAchievers from "../../sections/14-feedback-from-achievers.ast
 import ContactUs from "../../sections/15-contact-us.astro";
 import Footer from "../../sections/16-footer.astro";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { langStaticRoutes } from "../../i18n/ui";
 
 const t = useTranslations(getLangFromUrl(Astro.url));
 
 export const getStaticPaths = (() => {
-	return [
-		{
-			params: {
-				lang: "en",
-			},
-		},
-		{
-			params: {
-				lang: "ta",
-			},
-		},
-	];
+	return langStaticRoutes;
 }) satisfies GetStaticPaths;
 ---
 

@@ -427,3 +427,16 @@ export const ui = Object.freeze({
 		looking_for_past_papers__button: "வினாத்தாள்கள்",
 	},
 });
+
+export const langStaticRoutes = [
+	{
+		params: {
+			lang: "en",
+		},
+	},
+	{
+		params: {
+			lang: "ta",
+		},
+	},
+];
