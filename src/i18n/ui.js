@@ -276,7 +276,7 @@ export const ui = Object.freeze({
 		what_is_mora_pilot_exam__p1:
 			"When sweeping over the ideas of how to choose the ways to advance the academic standards of Tamil-speaking students, our buddies thought of pilot examinations, which could boost the last-time preparations and be a way to appraise the students themselves at the very edge.",
 		what_is_mora_pilot_exam__p2:
-			"But providing a common exam paper and marking wouldn’t help them , as they are very familiar to them. So, to add more and more spice,",
+			"But providing a common exam paper and marking wouldn't help them , as they are very familiar to them. So, to add more and more spice,",
 		what_is_mora_pilot_exam__li1:
 			"The exam papers are set by popular and experienced teachers.",
 		what_is_mora_pilot_exam__li2:
