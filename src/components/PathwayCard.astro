@@ -12,7 +12,7 @@ const { year, title, description } = Astro.props;
 	ontouchstart="this.classList.toggle('hover');"
 >
 	<div class="container">
-		<div class="front" style="background-color: rgb(210, 16, 165);">
+		<div class="front bg-secondary-950">
 			<div class="inner">
 				<h4 class="relative text-3xl mb-8">{title}</h4>
 				<span class="opacity-70 font-light">{year}</span>
@@ -20,7 +20,9 @@ const { year, title, description } = Astro.props;
 		</div>
 		<div class="back">
 			<div class="inner">
-				<p class="text-sm sm:text-[1.2rem]">{description}</p>
+				<p class="leading-6 text-sm mx-10 sm:text-[1.2rem]">
+					{description}
+				</p>
 			</div>
 		</div>
 	</div>
@@ -28,9 +30,7 @@ const { year, title, description } = Astro.props;
 
 <style>
 	h4::after {
-		@apply h-[2px] absolute inset-x-0 my-0 mx-auto content-[""] w-16;
-
-		background: #9fc9e8;
+		@apply h-[5px] absolute inset-x-0 my-0 mx-auto content-[""] w-16 bg-secondary-200 rounded-full;
 		bottom: -0.75rem;
 	}
 	.container {
@@ -64,8 +64,12 @@ const { year, title, description } = Astro.props;
 	}
 
 	.back {
-		background: #3c4b7e;
-		background: linear-gradient(45deg, #232c48 0%, #3c4b7e 100%);
+		/* @apply bg-gradient-to-r from-ultra-violet-900 to-mora-purple-950; */
+		background: linear-gradient(
+			45deg,
+			theme("colors.primary.700") 0%,
+			theme("colors.primary.900") 100%
+		);
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -82,7 +86,7 @@ const { year, title, description } = Astro.props;
 		content: "";
 		display: block;
 		opacity: 0.6;
-		background-color: #000;
+		/* background-color: #000; */
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
 		border-radius: 10px;
@@ -141,3 +145,6 @@ const { year, title, description } = Astro.props;
 		transform-style: preserve-3d;
 	}
 </style>
+
+<!-- todo: simplify styling, repetition found -->
+<!-- todo: fix layout text overflow during l to m viewport -->

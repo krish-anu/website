@@ -11,7 +11,7 @@ export const LANGUAGES_DISPLAY_TEXT = Object.freeze(
 	 * @type {Record<Language, string>}
 	 */
 	{
-		en: "English",
+		en: "ENG",
 		ta: "தமிழ்",
 	},
 );
@@ -148,18 +148,27 @@ export const ui = Object.freeze({
 		index__title: "Mora Exams",
 		meta__description:
 			"Mora Exams is the largest, island-wide pioneer exam for A/L students. It proves to be incredibly helpful before entering the final exams, providing access to past papers and model papers.",
+
 		nav__timetable: "Timetable",
 		nav__exam_centres: "Exam Centres",
 		nav__resources: "Resources",
 		nav__about: "About Us",
-		hero__title: "Sri Lanka's biggest pilot exams for G.C.E. (A/L) students",
+
+		hero__title: "Sri Lanka's biggest pilot exams for G.C.E. Advanced Level",
+
 		find_your_examination_centres__tile: "Find your examination centres",
 		find_your_examination_centres__description:
 			"We have 69 examination centre networks covering almost the whole island. Choose your district from the map, to view the available exam centres.",
 		looking_for_past_papers__title: "Looking for Mora Exam Past Papers?",
-		timetable__title: "Timetable",
+		looking_for_past_papers__description:
+			"Find all the questions from the previous years and prepare yourself for the ultimate test. You'll be redirected to a Google Drive folder.",
+		// looking_for_past_papers__description:
+		// 	"Now It is even easier to find the paper you need. We have advanced filtering options. And we divided all the questions for each year based on the sub-sections of each subject. Now you can practice our past papers section-wise.",
+		looking_for_past_papers__button: "View Pastpapers",
+
 		committee__title: "Mora Exam - 2023 | Committee",
 		committee__president_name: "Sarujan",
+
 		committee__president_post: "President",
 		committee__secretary_name: "Harikrishna",
 		committee__secretary_post: "Secretary",
@@ -172,13 +181,12 @@ export const ui = Object.freeze({
 		committee__treasurer_faculty: "Material Science And Engineering",
 		committee__vice_president_faculty: "Computer Sciecne and Engineering",
 		committee__university: "University of Moratuwa",
-		looking_for_past_papers__description:
-			"Now It is even easier to find the paper you need. We have advanced filtering options. And we divided all the questions for each year based on the sub-sections of each subject. Now you can practice our past papers section-wise.",
+
 		footer_title_1: "Mora Exams",
 		footer_title_1_description_p1:
 			"We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
 		footer_title_1_description_p2:
-			"It is very obvious how the engineering students in our society bring themselves up and plan out schemes to assist our community in many ways. We too, the Tamil people of the University of Moratuwa, brought ourselves together under the banner of Mora E-Tamils.",
+			"It is very obvious how the engineering students in our society bring themselves up and plan out schemes to assist our community in many ways. We too, the Tamil people of the University of Moratuwa, brought ourselves together under the banner of Mora Exams.",
 		footer_title_2: "Contact Us :",
 		footer_title_3: "Follow Us :",
 		footer_title_4: "Our Services",
@@ -187,13 +195,15 @@ export const ui = Object.freeze({
 		footer_title_4_s3: "E-learning Videos",
 		footer_title_4_s4: "E-learning Site",
 		footer_title_4_s5: "Doubts Forms",
+
 		elearning_videos_title: "E-Learning videos",
 		elearning_videos_p:
 			"We have done video explanations regarding important topics in each subject on our YouTube channel. Click on any of the subjects listed below and view the respective videos.",
 		elearning_videos_combined_maths: "Combined Maths",
 		elearning_videos_physics: "Physics",
 		elearning_videos_chemistry: "Chemistry",
-		pathway__title: "Pathway of the Mora Exam",
+
+		pathway__title: "Our Journey",
 		pathway__card1_title: "START",
 		pathway__card2_title: "RESTART",
 		pathway__card3_title: "TECHNOLOGY STREAM",
@@ -206,6 +216,16 @@ export const ui = Object.freeze({
 			"We added the Tech stream in 2016 due to student requests and the Provincial Director of Education. Now, we've delegated its management to tech faculty, University of Jaffna for students' benefit.",
 		pathway__card4_para:
 			"In the 14th year of the Mora Exam, we are proud to serve the students. Last year, we expanded our service to 22 districts, conducted the examinations in more than 69 examination centres, and accommodated more than 6,000 candidates.",
+
+		feedback_heading: "Thoughts from the Champions",
+		achivers_ranking_1: "Ex-President",
+		achivers_ranking_2: "Island First",
+		achivers_ranking_3: "Island First",
+		achivers_ranking_4: "District First(JAFFNA)",
+		achivers_ranking_5: "District First(JAFFNA)",
+		achivers_ranking_6: "Island First(JAFFNA)",
+		achivers_ranking_7: "District First(JAFFNA)",
+		achivers_ranking_8: "District First(JAFFNA)",
 		feedback_iroshan:
 			"It has gone through a variety of dimensions, and now it has reached national recognition and standards. Simply put, it's just another level.",
 		feedback_darukeesan:
@@ -229,11 +249,14 @@ export const ui = Object.freeze({
 		feedback_jathusan_name: "Jathusan",
 		feedback_sundarbavan_name: "Sundarbavan",
 		feedback_suriya_name: "Suriya",
-		feedback_heading: "FEEDBACK FROM ACHIEVERS",
+		feedback_snekan_name: "Snekan",
+
 		statistics__years: "Years",
 		statistics__districts: "Districts",
 		statistics__centers: "Centres",
 		statistics__candidates: "Candidates",
+
+		timetable__title: "Timetable",
 		timetable__start: "START",
 		timetable__date25_sub1: "Combined Mathematics-I",
 		timetable__date25_sub2: "Biology-I",
@@ -248,7 +271,8 @@ export const ui = Object.freeze({
 		timetable__date_sep: "SEP",
 		timetable__date_dec: "DEC",
 		timetable__end: "END",
-		what_is_mora_pilot_exam__h2: "What is Mora A/L Pilot Examination?",
+
+		what_is_mora_pilot_exam__h2: "What is Mora Exams?",
 		what_is_mora_pilot_exam__p1:
 			"When sweeping over the ideas of how to choose the ways to advance the academic standards of Tamil-speaking students, our buddies thought of pilot examinations, which could boost the last-time preparations and be a way to appraise the students themselves at the very edge.",
 		what_is_mora_pilot_exam__p2:
@@ -261,6 +285,7 @@ export const ui = Object.freeze({
 			"We too release island ranks based on their z-scores.",
 		what_is_mora_pilot_exam__p3:
 			"It vividly canvases the standards of the examinations and their potential among the students so that the students can adjust themselves to become more and more fit for the G.C.E. (A/L) examination, which makes their future more efficacious.",
+
 		all_about_us_section_heading: "What is all about us?",
 		all_about_us_section_1:
 			"We, engineers, are very much concerned about society and its betterment, and we believe that the betterment of society will bring a more prosperous and hybrid future generation than irrelevant mutations.",
@@ -271,29 +296,19 @@ export const ui = Object.freeze({
 		all_about_us_section_etc: "Brammam, Jeevanathi,...etc",
 		all_about_us_section_3:
 			"All these programmes are designed and developed with the motive of strengthening the longevity and enrichment of the culture and tradition of the society. The organization Mora E-Tamils was established and fostered by the Tamil students of the Engineering Faculty of the University of Moratuwa with the sole aim of uplifting and forward-moving the academic standards of the Tamil-speaking students in our country.",
-		achivers_ranking_1: "Ex-President",
-		achivers_ranking_2: "Island First",
-		achivers_ranking_3: "Island First",
-		achivers_ranking_4: "District First(JAFFNA)",
-		achivers_ranking_5: "District First(JAFFNA)",
-		achivers_ranking_6: "Island First(JAFFNA)",
-		achivers_ranking_7: "District First(JAFFNA)",
-		achivers_ranking_8: "District First(JAFFNA)",
+
 		name__tla: "Tamil Literary Association",
-		feedback_snekan_name: "Snekan",
 		hero_button: "Apply Now",
-		looking_for_past_papers__button: "View Pastpapers",
 	},
 	ta: {
-		index__title: "மொறா பரீட்சைகள்",
+		index__title: "Mora Exams",
 		meta__description:
-			"Mora Exams என்பது க.பொ.த (A/L) மாணவர்களுக்கான மிகப்பெரிய, நாடளாவிய பரீட்சையாகும். இறுதித் தேர்வுகளில் நுழைய போகும் மாணவர்களுக்கு இது நம்பமுடியாத அளவிற்கு உதவியாக இருக்கின்றது.",
-		nav__timetable: "பரீட்சை அட்டவணை",
+			"Mora Exams என்பது க.பொ.த (A/L) மாணவர்களுக்கான மாபெரும், நாடளாவிய பரீட்சையாகும். இறுதித் தேர்வுகளில் நுழைய போகும் மாணவர்களுக்கு இது நம்பமுடியாத அளவிற்கு உதவியாக இருக்கின்றது.",
+		nav__timetable: "நேர அட்டவணை",
 		nav__exam_centres: "பரீட்சை நிலையங்கள்",
 		nav__resources: "வளங்கள்",
 		nav__about: "எம்மைப் பற்றி",
-		hero__title:
-			"க. பொ. த. (உ/த) மாணவர்களுக்கான இலங்கையின்  மிகப்பெரிய முன்னோடி பரீட்சை",
+		hero__title: "இலங்கையின் மாபெரும் உயர்தர முன்னோடிப்பரீட்சை",
 		find_your_examination_centres__tile:
 			"உங்களது பரீட்சை நிலையத்தை கண்டறியுங்கள்",
 		find_your_examination_centres__description:

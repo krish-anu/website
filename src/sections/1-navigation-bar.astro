@@ -58,7 +58,7 @@ const { hideLogo } = Astro.props;
 
 	<ul
 		class={[
-			`m-0 pl-[var(--body-margin-x)] pt-[12vh] text-2xl bg-ultra-violet-800 flex flex-wrap flex-col gap-y-8 gap-x-5 fixed top-0 bottom-0 right-0 left-0 z-20 translate-x-[-100%] h-[100vh] backdrop-blur order-2 mx-auto`,
+			`m-0 pl-[var(--body-margin-x)] pt-[12vh] text-2xl flex flex-wrap flex-col gap-y-8 gap-x-5 fixed top-0 bottom-0 right-0 left-0 z-20 translate-x-[-100%] h-[100vh] backdrop-blur order-2 mx-auto`,
 			`sm:ml-25 sm:p-0 sm:flex-row sm:gap-y-0 sm:justify-end sm:static sm:translate-x-[0] sm:items-center sm:bg-inherit sm:h-fit sm:text-base`,
 		].join(" ")}
 	>
@@ -170,7 +170,7 @@ const { hideLogo } = Astro.props;
 		@apply hidden pointer-events-none;
 	}
 	nav#cloned.nav-fixed {
-		@apply flex fixed top-0 bg-ultra-violet-800 right-0 left-0 pointer-events-auto;
+		@apply flex fixed top-0 bg-primary-900 right-0 left-0 pointer-events-auto;
 	}
 	.logo-title {
 		@apply text-transparent;

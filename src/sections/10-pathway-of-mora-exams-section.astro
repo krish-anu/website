@@ -5,7 +5,7 @@ import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
-<section class="mx-auto">
+<section class="pt-4">
 	<h2 class="mt-10 mb-8 text-center">{t("pathway__title")}</h2>
 
 	<div
@@ -40,7 +40,11 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		margin: 0;
 		padding: 0;
 	} */
-
+	section {
+		@apply text-secondary-200;
+		background: url("/assets/backgrounds/bg1.jpg") center / cover no-repeat
+			fixed;
+	}
 	/* h1 { */
 	/* font-size: 4rem; */
 	/* font-family: "Montserrat"; */
@@ -50,3 +54,5 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 	/* margin: 2rem 0; */
 	/* } */
 </style>
+
+<!-- todo: need to fix margin errors during transitions, fix spacing between cards -->

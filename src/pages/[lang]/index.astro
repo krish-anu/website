@@ -9,14 +9,14 @@ import FindYourExaminationCentres from "../../sections/4-find-your-examination-c
 import LookingForMoraExamPastpapers from "../../sections/5-looking-for-mora-exam-pastpapers.astro";
 import ElearningVideos from "../../sections/6-elearning-videos.astro";
 import ExamTimeTable from "../../sections/7-exam-time-table.astro";
-import PlatinumSponsors from "../../sections/8-platinum-sponsors.astro";
-import WhatIsAllAboutUs from "../../sections/9-what-is-all-about-us.astro";
+// import PlatinumSponsors from "../../sections/8-platinum-sponsors.astro";
+// import WhatIsAllAboutUs from "../../sections/9-what-is-all-about-us.astro";
 import PathwayOfMoraExams from "../../sections/10-pathway-of-mora-exams-section.astro";
 import BasicStatistics from "../../sections/11-basic-statistics.astro";
 import OurSponsors from "../../sections/12-our-sponsors.astro";
 import OurCommittee from "../../sections/13-our-committee.astro";
 import FeedbackFromAchievers from "../../sections/14-feedback-from-achievers.astro";
-import ContactUs from "../../sections/15-contact-us.astro";
+// import ContactUs from "../../sections/15-contact-us.astro";
 import Footer from "../../sections/16-footer.astro";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import { langStaticRoutes } from "../../i18n/ui";
@@ -38,10 +38,10 @@ export const getStaticPaths = (() => {
 	<WhatIsMoraExams />
 	<PathwayOfMoraExams />
 	<BasicStatistics />
-	<FindYourExaminationCentres />
 	<FeedbackFromAchievers />
-	<OurCommittee />
 	<OurSponsors />
+	<OurCommittee />
+	<FindYourExaminationCentres />
 	<ExamTimeTable />
 	<!-- <PlatinumSponsors /> -->
 	<!-- <WhatIsAllAboutUs /> -->
@@ -53,7 +53,7 @@ export const getStaticPaths = (() => {
 
 <style is:global>
 	body {
-		@apply text-mora-black-950;
+		@apply text-black;
 	}
 	body:has(#nav-bar-toggle:checked),
 	body.disable-scrolling {
@@ -66,6 +66,7 @@ export const getStaticPaths = (() => {
 		@apply scroll-mt-20;
 	}
 	.first-fold {
-		background: url("/bg4.jpg") center / cover no-repeat fixed;
+		background: url("/assets/backgrounds/bg4.jpg") center / cover no-repeat
+			fixed;
 	}
 </style>

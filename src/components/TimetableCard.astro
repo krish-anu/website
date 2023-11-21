@@ -44,7 +44,7 @@ const displayDate = dateString.concat(" - ", dayOfWeek.toUpperCase());
 			{
 				subjects.map((subject) => {
 					return (
-						<li class="flex flex-col">
+						<li class="flex flex-col ">
 							<span class="font-semibold">
 								<i class={`icon fa-solid ${subject.icon} pr-3 pl-1 text-xl`} />
 								{subject[`name_${lang}`]}
@@ -79,13 +79,13 @@ const displayDate = dateString.concat(" - ", dayOfWeek.toUpperCase());
 		flex-basis: calc(33.33333% - 30px);
 	}
 	.ag-courses-item_link {
-		@apply h-full block overflow-hidden px-5 py-4 bg-extra-1-600 relative opacity-100;
+		@apply h-full block overflow-hidden px-5 py-4 bg-secondary-200 text-primary-900 transition-all duration-500 hover:text-secondary-200 relative opacity-100;
 		/* background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%); */
 	}
 	.ag-courses-item_link:hover,
 	.ag-courses-item_link:hover .ag-courses-item_date {
 		text-decoration: none;
-		color: #fff;
+		color: theme("colors.primary.100");
 	}
 	.ag-courses-item_link:hover .ag-courses-item_bg {
 		-webkit-transform: scale(10);
@@ -97,22 +97,22 @@ const displayDate = dateString.concat(" - ", dayOfWeek.toUpperCase());
 	}
 	.ag-courses-item_link:hover .icon {
 		animation: none;
+		@apply text-primary-100;
 	}
 	.ag-courses-item_title {
-		@apply text-white z-[2] relative m-0 mb-5 overflow-hidden flex gap-3 flex-col;
+		@apply z-[2] relative m-0 mb-5 overflow-hidden flex gap-3 flex-col;
 	}
 	.ag-courses-item_date-box {
-		@apply z-[2] relative text-2xl text-mora-black-950;
+		@apply z-[2] relative text-2xl;
 	}
 	.ag-courses-item_date {
-		@apply font-semibold mt-0 transition-colors duration-500 text-ultra-violet-950;
+		@apply font-semibold mt-0 transition-colors duration-500 text-primary-950;
 		/* color: #270722; */
 	}
 	.ag-courses-item_bg {
 		@apply transition-all duration-500;
 		height: 180px;
 		width: 180px;
-		background-color: #490665;
 
 		z-index: 1;
 		position: absolute;
@@ -120,8 +120,9 @@ const displayDate = dateString.concat(" - ", dayOfWeek.toUpperCase());
 		right: -95px;
 
 		border-radius: 60%;
+		background-color: theme("colors.primary.900");
 	}
-	.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+	/* .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
 		background-color: #490665;
 	}
 	.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
@@ -135,7 +136,7 @@ const displayDate = dateString.concat(" - ", dayOfWeek.toUpperCase());
 	}
 	.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
 		background-color: #490665;
-	}
+	} */
 
 	@media only screen and (max-width: 979px) {
 		.ag-courses_item {

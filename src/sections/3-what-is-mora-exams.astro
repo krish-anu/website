@@ -6,100 +6,57 @@ import { getLangFromUrl, useTranslations } from "../i18n/utils";
 const t = useTranslations(getLangFromUrl(Astro.url));
 ---
 
-<div class="body1">
-	<div class="card">
-		<div class="p1 p-3 sm:p-10 pt-7 text-justify">
-			<div class="card2">
-				<h2 class="text-3xl sm:text-4xl text-left">
-					{t("what_is_mora_pilot_exam__h2")}
-				</h2>
-				<p class="text-xl">
-					{t("what_is_mora_pilot_exam__p1")}
-				</p>
-
-				<p class="text-xl">
-					{t("what_is_mora_pilot_exam__p2")}
-				</p>
-
-				<ul>
-					<li class="text-xl">
-						{t("what_is_mora_pilot_exam__li1")}
-					</li>
-					<li class="text-xl">
-						{t("what_is_mora_pilot_exam__li2")}
-					</li>
-					<li class="text-xl">
-						{t("what_is_mora_pilot_exam__li3")}
-					</li>
-				</ul>
-				<p class="text-xl">
-					{t("what_is_mora_pilot_exam__p3")}
-				</p>
-			</div>
-		</div>
+<section class="pt-10 align-center">
+	<div
+		class="card text-primary-100 p-3 sm:p-10 pt-7 text-justify border-gray-300 border-2 rounded-lg"
+	>
+		<h2 class="text-3xl sm:text-4xl text-left">
+			{t("what_is_mora_pilot_exam__h2")}
+		</h2>
+		<p class="text-xl">
+			{t("what_is_mora_pilot_exam__p1")}
+		</p>
+		<p class="text-xl">
+			{t("what_is_mora_pilot_exam__p2")}
+		</p>
+		<ul>
+			<li class="text-xl">
+				{t("what_is_mora_pilot_exam__li1")}
+			</li>
+			<li class="text-xl">
+				{t("what_is_mora_pilot_exam__li2")}
+			</li>
+			<li class="text-xl">
+				{t("what_is_mora_pilot_exam__li3")}
+			</li>
+		</ul>
+		<p class="text-xl">
+			{t("what_is_mora_pilot_exam__p3")}
+		</p>
 	</div>
+</section>
 
-	<style>
-		:root {
-			font-size: 15px;
-			box-sizing: inherit;
-		}
+<style>
+	section {
+		background: url("/assets/backgrounds/bg1.jpg") center / cover no-repeat
+			fixed;
+	}
 
-		*,
-		*:before,
-		*:after {
-			box-sizing: inherit;
-		}
+	div.card {
+		/* max-width: 900px; */
+		/* min-height: auto; */
+		/* display: flex; */
+		/* flex-direction: column; */
+		/* justify-content: space-between; */
 
-		.p1 {
-			margin: 0;
-			padding-top: 5px;
-		}
+		/* max-width: 1000px; */
+		/* height: auto; */
 
-		.p1:not(:last-child) {
-			margin-bottom: 1.5em;
-		}
-
-		.body1 {
-			font:
-				1em/1.618 Inter,
-				sans-serif;
-
-			display: flex;
-			align-items: center;
-			justify-content: center;
-
-			min-height: 100vh;
-			padding: 5px;
-
-			color: #224;
-			background: url("/bg4.jpg") center / cover no-repeat fixed;
-			color: black;
-			color: black;
-		}
-
-		.card {
-			max-width: 900px;
-			min-height: auto;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-
-			max-width: 1000px;
-			height: auto;
-
-			border: 1px solid rgba(255, 255, 255, 0.25);
-			border-radius: 1rem;
-			background-color: rgba(255, 255, 255, 0.9);
-			box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-
-			backdrop-filter: blur(15px);
-			column-gap: 20px;
-		}
-
-		.card-footer {
-			font-size: 0.65em;
-			color: #446;
-		}
-	</style>
-</div>
+		/* border: 1px solid theme(colors.gray.100); */
+		/* border-radius: 1rem; */
+		/* background-color: rgba(255, 255, 255, 0.9); */
+		box-shadow: 0 0 5px 0px theme(colors.black);
+		backdrop-filter: blur(15px);
+		/* column-gap: 20px; */
+	}
+</style>

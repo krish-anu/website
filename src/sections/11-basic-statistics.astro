@@ -16,17 +16,17 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 </section>
 <style>
 	div {
-		align-items: center;
-		margin-top: 20px;
+		/* align-items: center; */
 	}
 	section {
-		background-color: rgb(75, 26, 121);
-		color: #e6d1d1;
-		background: url("/bg1.jpg") center / cover no-repeat fixed;
+		@apply text-primary-100 pt-10 pb-5;
+		background: url("/assets/backgrounds/bg1.jpg") center / cover no-repeat
+			fixed;
 	}
 	hr {
 		height: 100px;
-		border: 3px solid #d17e0a;
+		border: 3px solid theme(colors.rust-orange.400);
+		border-radius: 10px;
 	}
 	@media (max-width: 900px) {
 		div {
@@ -35,8 +35,9 @@ const t = useTranslations(getLangFromUrl(Astro.url));
 		}
 		hr {
 			height: 0%;
-			width: 200px;
-			border: 1px solid #ffa500;
+			width: 70%;
+			border: 3px solid theme(colors.rust-orange.400);
+			border-radius: 10px;
 		}
 	}
 </style>

@@ -1,5 +1,5 @@
+// programmatically switch language texts in site
 import { ui, defaultLang, LIST_OF_LANGUAGES } from "./ui";
-
 /**
  * @param {string} lang
  * @returns {lang is import("./ui").Language}
