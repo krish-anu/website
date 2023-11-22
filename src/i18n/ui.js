@@ -138,6 +138,10 @@ export const defaultLang = "en";
  * @prop {string} name__tla
  * @prop {string} hero_button
  * @prop {string} looking_for_past_papers__button
+ * @prop {string} find_your_index_number__heading
+ * @prop {string} find_your_index_number__para
+ * @prop {string} find_your_index_number__input
+ * @prop {string} find_your_index_number__button
  */
 
 /**
@@ -299,6 +303,10 @@ export const ui = Object.freeze({
 
 		name__tla: "Tamil Literary Association",
 		hero_button: "Apply Now",
+		find_your_index_number__heading: "Find your Index Number",
+		find_your_index_number__para: "Enter your NIC Number to find your Index Number.",
+		find_your_index_number__input: "Enter the NIC Number",
+		find_your_index_number__button: "Find",
 	},
 	ta: {
 		index__title: "Mora Exams",
@@ -440,6 +448,10 @@ export const ui = Object.freeze({
 		feedback_snekan_name: "சினேகன்",
 		hero_button: "விண்ணப்பிக்க",
 		looking_for_past_papers__button: "வினாத்தாள்கள்",
+		find_your_index_number__heading: "உங்கள் குறியீட்டு எண்ணைக் கண்டறியவும்",
+		find_your_index_number__para: "உங்கள் குறியீட்டு எண்ணைக் கண்டறிய உங்கள் தேசிய அடையாள அட்டை எண்ணை உள்ளிடவும்",
+		find_your_index_number__input: "தே. அ.அ எண்ணை உள்ளிடவும்",
+		find_your_index_number__button: "கண்டுபிடி",
 	},
 });
 

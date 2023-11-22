@@ -23,14 +23,14 @@ export const getStaticPaths = (() => {
 			class="bg-purple-400 w-[80%] my-20 rounded-xl flex flex-col items-center shadow-purple sm:w-[60%] sm:my-32 md:w-[50%] md:my-60 lg:w-[40%]"
 		>
 			<h3 class="text-xl md:text-3xl text-center !leading-snug">
-				Find your Index Number
+				{t("find_your_index_number__heading")}
 			</h3>
 			<p class="text-center text-lg !leading-snug sm:text-xl px-3 md:text-2xl">
-				Enter your NIC Number to find your Index Number.
+				{t("find_your_index_number__para")}
 			</p>
 			<label for="inp" class="inp px-3">
 				<input type="text" id="inp" placeholder="" />
-				<span class="label">Enter the NIC Number</span>
+				<span class="label">{t("find_your_index_number__input")}</span>
 				<span class="focus-bg"></span>
 			</label>
 			<!-- <input
@@ -40,7 +40,7 @@ export const getStaticPaths = (() => {
 			/> -->
 			<button
 				class="rounded-2xl mb-7 mt-3 sm:text-xl border-black hover:cursor-pointer hover:border-purple-800 sm:px-2 md:text-2xl md:px-4 md:pt-1 bg-purple-500"
-				>Find</button
+				>{t("find_your_index_number__button")}</button
 			>
 		</div>
 	</div>
